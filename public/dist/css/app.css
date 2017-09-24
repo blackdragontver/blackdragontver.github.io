@@ -1,0 +1,3337 @@
+/*! normalize.css v7.0.0 | MIT License | github.com/necolas/normalize.css */
+/* Document
+ * ========================================================================== */
+/**
+ * 1. Correct the line height in all browsers.
+ * 2. Prevent adjustments of font size after orientation changes in
+ *        IE on Windows Phone and in iOS. */
+@import url("https://fonts.googleapis.com/css?family=PT+Sans:400|PT+Serif:400,400i,700,700i&subset=cyrillic-ext,latin-ext");
+html {
+  line-height: 1.15;
+  /* 1 */
+  -ms-text-size-adjust: 100%;
+  /* 2 */
+  -webkit-text-size-adjust: 100%;
+  /* 2 */ }
+
+/* Sections
+ * ========================================================================== */
+/**
+ * Remove the margin in all browsers (opinionated). */
+body {
+  margin: 0; }
+
+/**
+ * Add the correct display in IE 9-. */
+article, aside, footer, header, nav, section {
+  display: block; }
+
+/**
+ * Correct the font size and margin on `h1` elements within `section` and
+ * `article` contexts in Chrome, Firefox, and Safari. */
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0; }
+
+/* Grouping content
+ * ========================================================================== */
+/**
+ * Add the correct display in IE 9-.
+ * 1. Add the correct display in IE. */
+figcaption, figure, main {
+  /* 1 */
+  display: block; }
+
+/**
+ * Add the correct margin in IE 8. */
+figure {
+  margin: 1em 40px; }
+
+/**
+ * 1. Add the correct box sizing in Firefox.
+ * 2. Show the overflow in Edge and IE. */
+hr {
+  box-sizing: content-box;
+  /* 1 */
+  height: 0;
+  /* 1 */
+  overflow: visible;
+  /* 2 */ }
+
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers. */
+pre {
+  font-family: monospace, monospace;
+  /* 1 */
+  font-size: 1em;
+  /* 2 */ }
+
+/* Text-level semantics
+ * ========================================================================== */
+/**
+ * 1. Remove the gray background on active links in IE 10.
+ * 2. Remove gaps in links underline in iOS 8+ and Safari 8+. */
+a {
+  background-color: transparent;
+  /* 1 */
+  -webkit-text-decoration-skip: objects;
+  /* 2 */ }
+
+/**
+ * 1. Remove the bottom border in Chrome 57- and Firefox 39-.
+ * 2. Add the correct text decoration in Chrome, Edge, IE, Opera, and Safari. */
+abbr[title] {
+  border-bottom: none;
+  /* 1 */
+  text-decoration: underline;
+  /* 2 */
+  text-decoration: underline dotted;
+  /* 2 */ }
+
+/**
+ * Prevent the duplicate application of `bolder` by the next rule in Safari 6. */
+b, strong {
+  font-weight: inherit; }
+
+/**
+ * Add the correct font weight in Chrome, Edge, and Safari. */
+b, strong {
+  font-weight: bolder; }
+
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers. */
+code, kbd, samp {
+  font-family: monospace, monospace;
+  /* 1 */
+  font-size: 1em;
+  /* 2 */ }
+
+/**
+ * Add the correct font style in Android 4.3-. */
+dfn {
+  font-style: italic; }
+
+/**
+ * Add the correct background and color in IE 9-. */
+mark {
+  background-color: #ff0;
+  color: #000; }
+
+/**
+ * Add the correct font size in all browsers. */
+small {
+  font-size: 80%; }
+
+/**
+ * Prevent `sub` and `sup` elements from affecting the line height in
+ * all browsers. */
+sub, sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline; }
+
+sub {
+  bottom: -0.25em; }
+
+sup {
+  top: -0.5em; }
+
+/* Embedded content
+ * ========================================================================== */
+/**
+ * Add the correct display in IE 9-. */
+audio, video {
+  display: inline-block; }
+
+/**
+ * Add the correct display in iOS 4-7. */
+audio:not([controls]) {
+  display: none;
+  height: 0; }
+
+/**
+ * Remove the border on images inside links in IE 10-. */
+img {
+  border-style: none; }
+
+/**
+ * Hide the overflow in IE. */
+svg:not(:root) {
+  overflow: hidden; }
+
+/* Forms
+ * ========================================================================== */
+/**
+ * 1. Change the font styles in all browsers (opinionated).
+ * 2. Remove the margin in Firefox and Safari. */
+button, input, optgroup, select, textarea {
+  font-family: sans-serif;
+  /* 1 */
+  font-size: 100%;
+  /* 1 */
+  line-height: 1.15;
+  /* 1 */
+  margin: 0;
+  /* 2 */ }
+
+/**
+ * Show the overflow in IE.
+ * 1. Show the overflow in Edge. */
+button, input {
+  /* 1 */
+  overflow: visible; }
+
+/**
+ * Remove the inheritance of text transform in Edge, Firefox, and IE.
+ * 1. Remove the inheritance of text transform in Firefox. */
+button, select {
+  /* 1 */
+  text-transform: none; }
+
+/**
+ * 1. Prevent a WebKit bug where (2) destroys native `audio` and `video`
+ *        controls in Android 4.
+ * 2. Correct the inability to style clickable types in iOS and Safari. */
+button, html [type="button"], [type="reset"], [type="submit"] {
+  -webkit-appearance: button;
+  /* 2 */ }
+
+/**
+ * Remove the inner border and padding in Firefox. */
+button::-moz-focus-inner, [type="button"]::-moz-focus-inner, [type="reset"]::-moz-focus-inner, [type="submit"]::-moz-focus-inner {
+  border-style: none;
+  padding: 0; }
+
+/**
+ * Restore the focus styles unset by the previous rule. */
+button:-moz-focusring, [type="button"]:-moz-focusring, [type="reset"]:-moz-focusring, [type="submit"]:-moz-focusring {
+  outline: 1px dotted ButtonText; }
+
+/**
+ * Correct the padding in Firefox. */
+fieldset {
+  padding: 0.35em 0.75em 0.625em; }
+
+/**
+ * 1. Correct the text wrapping in Edge and IE.
+ * 2. Correct the color inheritance from `fieldset` elements in IE.
+ * 3. Remove the padding so developers are not caught out when they zero out
+ *        `fieldset` elements in all browsers. */
+legend {
+  box-sizing: border-box;
+  /* 1 */
+  color: inherit;
+  /* 2 */
+  display: table;
+  /* 1 */
+  max-width: 100%;
+  /* 1 */
+  padding: 0;
+  /* 3 */
+  white-space: normal;
+  /* 1 */ }
+
+/**
+ * 1. Add the correct display in IE 9-.
+ * 2. Add the correct vertical alignment in Chrome, Firefox, and Opera. */
+progress {
+  display: inline-block;
+  /* 1 */
+  vertical-align: baseline;
+  /* 2 */ }
+
+/**
+ * Remove the default vertical scrollbar in IE. */
+textarea {
+  overflow: auto; }
+
+/**
+ * 1. Add the correct box sizing in IE 10-.
+ * 2. Remove the padding in IE 10-. */
+[type="checkbox"], [type="radio"] {
+  box-sizing: border-box;
+  /* 1 */
+  padding: 0;
+  /* 2 */ }
+
+/**
+ * Correct the cursor style of increment and decrement buttons in Chrome. */
+[type="number"]::-webkit-inner-spin-button, [type="number"]::-webkit-outer-spin-button {
+  height: auto; }
+
+/**
+ * 1. Correct the odd appearance in Chrome and Safari.
+ * 2. Correct the outline style in Safari. */
+[type="search"] {
+  -webkit-appearance: textfield;
+  /* 1 */
+  outline-offset: -2px;
+  /* 2 */ }
+  [type="search"]::-webkit-search-cancel-button, [type="search"]::-webkit-search-decoration {
+    -webkit-appearance: none; }
+
+/**
+ * Remove the inner padding and cancel buttons in Chrome and Safari on macOS. */
+/**
+ * 1. Correct the inability to style clickable types in iOS and Safari.
+ * 2. Change font properties to `inherit` in Safari. */
+::-webkit-file-upload-button {
+  -webkit-appearance: button;
+  /* 1 */
+  font: inherit;
+  /* 2 */ }
+
+/* Interactive
+ * ========================================================================== */
+/*
+ * Add the correct display in IE 9-.
+ * 1. Add the correct display in Edge, IE, and Firefox. */
+details, menu {
+  display: block; }
+
+/*
+ * Add the correct display in all browsers. */
+summary {
+  display: list-item; }
+
+/* Scripting
+ * ========================================================================== */
+/**
+ * Add the correct display in IE 9-. */
+canvas {
+  display: inline-block; }
+
+/**
+ * Add the correct display in IE. */
+template, [hidden] {
+  display: none; }
+
+/* Hidden
+ * ========================================================================== */
+/**
+ * Add the correct display in IE 10-. */
+*,
+*:before,
+*:after {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box; }
+
+html {
+  height: 100%;
+  min-height: 100%;
+  position: relative;
+  margin: 0;
+  padding: 0;
+  overflow: hidden; }
+
+body {
+  margin: 0;
+  padding: 0;
+  position: relative;
+  width: 100%;
+  background-color: #fcfcfc;
+  background-image: url(../img/bgs/bg-page.jpg);
+  background-position: center center;
+  background-size: cover;
+  transition: opacity 0.8s linear; }
+  body::after {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-color: #fcfcfc;
+    background-image: url(../img/bgs/bg-page-2.jpg);
+    background-position: center center;
+    background-size: cover;
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: -2;
+    opacity: 0.12; }
+
+@keyframes shake {
+  10%, 90% {
+    transform: translate3d(-1px, 0, 0); }
+  20%, 80% {
+    transform: translate3d(2px, 0, 0); }
+  30%, 50%, 70% {
+    transform: translate3d(-4px, 0, 0); }
+  40%, 60% {
+    transform: translate3d(4px, 0, 0); } }
+
+html {
+  -webkit-font-smoothing: antialiased; }
+
+body {
+  font: 400 15px/1.466 "PT Serif", serif;
+  color: #010101;
+  text-rendering: optimizeLegibility;
+  -webkit-text-rendering: optimizeLegibility; }
+
+*::selection {
+  color: #fcfcfc;
+  background: #010101; }
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+  padding: 0; }
+
+p {
+  margin: 0;
+  padding: 0; }
+  p b {
+    font-weight: bold; }
+  p i {
+    font-style: italic; }
+
+ul {
+  margin: 0;
+  padding: 0; }
+  ul li {
+    margin: 0;
+    padding: 0; }
+
+ol {
+  margin: 0;
+  padding: 0; }
+  ol li {
+    margin: 0;
+    padding: 0; }
+
+.b-content {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  position: relative; }
+  @media (max-width: 820px) {
+    .b-content {
+      padding: 0 80px; } }
+  @media (max-width: 819px) {
+    .b-content {
+      padding: 90px 0 70px 0; } }
+  .b-content__title {
+    font: 700 40px/1 "PT Serif", serif;
+    color: #010101;
+    text-shadow: 0 1px 2px rgba(1, 1, 1, 0.03);
+    text-align: center;
+    margin: 0 0 8vh; }
+    @media (max-width: 820px) {
+      .b-content__title {
+        font: 700 30px/1 "PT Serif", serif;
+        margin: 0 0 4vh;
+        text-shadow: 0 1px 1px rgba(1, 1, 1, 0.03); } }
+    @media (max-width: 819px) {
+      .b-content__title {
+        font: 700 24px/1 "PT Serif", serif;
+        margin: 0 0 3vh; } }
+  .b-content__descr {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 100%;
+    max-width: 630px;
+    margin: 0 auto;
+    position: relative;
+    padding: 0 15px; }
+    @media (max-width: 820px) {
+      .b-content__descr {
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start; } }
+    .b-content__descr_music {
+      flex-direction: column;
+      justify-content: flex-start; }
+    .b-content__descr_tea {
+      flex-direction: column;
+      justify-content: flex-start;
+      max-width: 830px; }
+      @media (max-width: 820px) {
+        .b-content__descr_tea {
+          max-width: 630px; } }
+  .b-content__descr-inner {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start; }
+  .b-content__icon {
+    font: 400 20px/1 "PT Serif", serif;
+    color: #050505;
+    white-space: nowrap;
+    margin: 0 35px 0 0;
+    padding: 0;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    text-align: center; }
+    @media (max-width: 820px) {
+      .b-content__icon {
+        font: 400 18px/1 "PT Serif", serif;
+        margin: 0 20px 0 0; } }
+    @media (max-width: 819px) {
+      .b-content__icon {
+        margin: 0 0 20px; } }
+    .b-content__icon:hover:before {
+      transform: scale(1.01); }
+      @media (max-width: 820px) {
+        .b-content__icon:hover:before {
+          transform: scale(1); } }
+    .b-content__icon:before {
+      content: '';
+      display: block;
+      width: 120px;
+      height: 120px;
+      background-position: 0 0;
+      background-repeat: no-repeat;
+      background-size: cover;
+      margin: 0 0 15px;
+      border: 1px #dedede solid;
+      border-radius: 50%;
+      box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
+      transform: scale(1);
+      transition: transform 0.3s ease; }
+    .b-content__icon_about-me:before {
+      background-image: url(../img/icons/icon-about-me.png); }
+  .b-content__text {
+    font: 400 15px/1.5 "PT Serif", serif;
+    color: #010101; }
+    @media (max-width: 820px) {
+      .b-content__text {
+        font: 400 14px/1.4 "PT Serif", serif; } }
+    .b-content__descr_tea .b-content__text {
+      margin-bottom: 35px; }
+      @media (max-width: 820px) {
+        .b-content__descr_tea .b-content__text {
+          margin-bottom: 20px; } }
+  .b-content__btn {
+    display: none;
+    opacity: 0.7;
+    background-position: 0 0;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 50px;
+    height: 50px;
+    margin: 0 0 5px;
+    cursor: pointer;
+    transition: opacity 0.2s ease, transform 0.3s ease; }
+    @media (max-width: 820px) {
+      .b-content__btn {
+        width: 40px;
+        height: 40px; } }
+    .b-content__btn:hover {
+      opacity: 1;
+      transform: scale(0.95); }
+    .b-content__btn_play {
+      background-image: url(data:image/svg+xml,%3C%3Fxml%20version%3D%221.0%22%20encoding%3D%22UTF-8%22%3F%3E%0A%3Csvg%20width%3D%2258px%22%20height%3D%2258px%22%20viewBox%3D%220%200%2058%2058%22%20version%3D%221.1%22%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20xmlns%3Axlink%3D%22http%3A//www.w3.org/1999/xlink%22%3E%0A%20%20%20%20%3C%21--%20Generator%3A%20Sketch%2044.1%20%2841455%29%20-%20http%3A//www.bohemiancoding.com/sketch%20--%3E%0A%20%20%20%20%3Ctitle%3Eicon-play%3C/title%3E%0A%20%20%20%20%3Cdesc%3ECreated%20with%20Sketch.%3C/desc%3E%0A%20%20%20%20%3Cdefs%3E%3C/defs%3E%0A%20%20%20%20%3Cg%20id%3D%22Page-1%22%20stroke%3D%22none%22%20stroke-width%3D%221%22%20fill%3D%22none%22%20fill-rule%3D%22evenodd%22%3E%0A%20%20%20%20%20%20%20%20%3Cg%20id%3D%22icon-play%22%20fill-rule%3D%22nonzero%22%20fill%3D%22%23000000%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%3Cpath%20d%3D%22M29%2C0%20C13.011719%2C0%200%2C13.011719%200%2C29%20C0%2C44.988281%2013.011719%2C58%2029%2C58%20C44.988281%2C58%2058%2C44.988281%2058%2C29%20C58%2C13.011719%2044.988281%2C0%2029%2C0%20Z%20M29%2C2%20C43.886719%2C2%2056%2C14.113281%2056%2C29%20C56%2C43.886719%2043.886719%2C56%2029%2C56%20C14.113281%2C56%202%2C43.886719%202%2C29%20C2%2C14.113281%2014.113281%2C2%2029%2C2%20Z%20M28.5625%2C6.007813%20C22.671875%2C6.128906%2016.960938%2C8.507813%2012.734375%2C12.734375%20C3.769531%2C21.703125%203.769531%2C36.292969%2012.734375%2C45.261719%20C12.929688%2C45.457031%2013.1875%2C45.554688%2013.441406%2C45.554688%20C13.699219%2C45.554688%2013.957031%2C45.457031%2014.152344%2C45.261719%20C14.542969%2C44.871094%2014.542969%2C44.238281%2014.152344%2C43.847656%20C5.960938%2C35.660156%205.964844%2C22.339844%2014.152344%2C14.152344%20C18.898438%2C9.402344%2025.699219%2C7.199219%2032.339844%2C8.265625%20C32.882813%2C8.355469%2033.394531%2C7.980469%2033.484375%2C7.4375%20C33.574219%2C6.890625%2033.199219%2C6.375%2032.65625%2C6.289063%20C31.289063%2C6.070313%2029.921875%2C5.980469%2028.5625%2C6.007813%20Z%20M36.660156%2C7.386719%20C36.269531%2C7.402344%2035.910156%2C7.648438%2035.765625%2C8.035156%20C35.570313%2C8.554688%2035.832031%2C9.128906%2036.351563%2C9.324219%20C37.0625%2C9.589844%2037.765625%2C9.894531%2038.453125%2C10.238281%20C38.597656%2C10.3125%2038.75%2C10.347656%2038.902344%2C10.347656%20C39.265625%2C10.347656%2039.617188%2C10.148438%2039.796875%2C9.796875%20C40.042969%2C9.308594%2039.84375%2C8.703125%2039.351563%2C8.453125%20C38.605469%2C8.078125%2037.828125%2C7.738281%2037.050781%2C7.445313%20C36.921875%2C7.398438%2036.789063%2C7.382813%2036.660156%2C7.386719%20Z%20M42.433594%2C10.675781%20C42.179688%2C10.707031%2041.9375%2C10.835938%2041.765625%2C11.050781%20C41.425781%2C11.488281%2041.5%2C12.113281%2041.9375%2C12.453125%20C42.605469%2C12.976563%2043.25%2C13.550781%2043.847656%2C14.152344%20C52.039063%2C22.339844%2052.039063%2C35.660156%2043.847656%2C43.847656%20C43.457031%2C44.242188%2043.457031%2C44.871094%2043.847656%2C45.265625%20C44.042969%2C45.457031%2044.300781%2C45.558594%2044.558594%2C45.558594%20C44.8125%2C45.558594%2045.070313%2C45.457031%2045.265625%2C45.265625%20C54.230469%2C36.296875%2054.230469%2C21.703125%2045.265625%2C12.734375%20C44.605469%2C12.078125%2043.902344%2C11.453125%2043.171875%2C10.878906%20C42.953125%2C10.710938%2042.683594%2C10.644531%2042.433594%2C10.675781%20Z%20M23.984375%2C17.761719%20C23.640625%2C17.757813%2023.292969%2C17.84375%2022.972656%2C18.027344%20C22.339844%2C18.382813%2021.960938%2C19.035156%2021.960938%2C19.765625%20L21.960938%2C38.234375%20C21.960938%2C38.964844%2022.339844%2C39.617188%2022.972656%2C39.976563%20C23.285156%2C40.152344%2023.621094%2C40.238281%2023.960938%2C40.238281%20C24.316406%2C40.238281%2024.667969%2C40.144531%2024.988281%2C39.953125%20L40.410156%2C30.71875%20C41.019531%2C30.351563%2041.386719%2C29.710938%2041.386719%2C29%20C41.386719%2C28.292969%2041.019531%2C27.648438%2040.410156%2C27.28125%20L24.988281%2C18.046875%20C24.675781%2C17.863281%2024.332031%2C17.765625%2023.984375%2C17.761719%20Z%20M23.964844%2C19.765625%20L39.386719%2C29%20L23.964844%2C38.238281%20L23.964844%2C19.765625%20Z%20M19.375%2C45.394531%20C18.984375%2C45.347656%2018.589844%2C45.527344%2018.386719%2C45.886719%20L17.386719%2C47.617188%20C17.109375%2C48.097656%2017.273438%2C48.707031%2017.75%2C48.984375%20C17.90625%2C49.074219%2018.078125%2C49.117188%2018.25%2C49.117188%20C18.59375%2C49.117188%2018.929688%2C48.9375%2019.113281%2C48.617188%20L20.113281%2C46.886719%20C20.390625%2C46.410156%2020.230469%2C45.796875%2019.75%2C45.519531%20C19.628906%2C45.453125%2019.503906%2C45.410156%2019.375%2C45.394531%20Z%20M38.625%2C45.394531%20C38.496094%2C45.410156%2038.367188%2C45.453125%2038.25%2C45.519531%20C37.769531%2C45.796875%2037.609375%2C46.410156%2037.886719%2C46.890625%20L38.886719%2C48.621094%20C39.070313%2C48.941406%2039.40625%2C49.121094%2039.75%2C49.121094%20C39.921875%2C49.121094%2040.09375%2C49.074219%2040.25%2C48.984375%20C40.730469%2C48.707031%2040.890625%2C48.097656%2040.613281%2C47.621094%20L39.613281%2C45.890625%20C39.40625%2C45.53125%2039.011719%2C45.347656%2038.625%2C45.394531%20Z%20M23.816406%2C47.34375%20C23.429688%2C47.398438%2023.09375%2C47.675781%2022.984375%2C48.078125%20L22.46875%2C50.011719%20C22.324219%2C50.542969%2022.644531%2C51.089844%2023.175781%2C51.234375%20C23.261719%2C51.257813%2023.347656%2C51.265625%2023.4375%2C51.265625%20C23.875%2C51.265625%2024.28125%2C50.972656%2024.402344%2C50.527344%20L24.921875%2C48.59375%20C25.0625%2C48.0625%2024.746094%2C47.511719%2024.214844%2C47.371094%20C24.082031%2C47.332031%2023.945313%2C47.328125%2023.816406%2C47.34375%20Z%20M34.1875%2C47.34375%20C34.058594%2C47.328125%2033.921875%2C47.332031%2033.785156%2C47.371094%20C33.253906%2C47.511719%2032.9375%2C48.0625%2033.078125%2C48.59375%20L33.597656%2C50.527344%20C33.71875%2C50.972656%2034.121094%2C51.265625%2034.5625%2C51.265625%20C34.652344%2C51.265625%2034.738281%2C51.257813%2034.824219%2C51.234375%20C35.355469%2C51.089844%2035.675781%2C50.542969%2035.53125%2C50.011719%20L35.015625%2C48.078125%20C34.90625%2C47.675781%2034.570313%2C47.398438%2034.1875%2C47.34375%20Z%20M29%2C48%20C28.445313%2C48%2028%2C48.445313%2028%2C49%20L28%2C51%20C28%2C51.554688%2028.445313%2C52%2029%2C52%20C29.554688%2C52%2030%2C51.554688%2030%2C51%20L30%2C49%20C30%2C48.445313%2029.554688%2C48%2029%2C48%20Z%22%20id%3D%22Shape%22%3E%3C/path%3E%0A%20%20%20%20%20%20%20%20%3C/g%3E%0A%20%20%20%20%3C/g%3E%0A%3C/svg%3E); }
+    .b-content__btn_pause {
+      background-image: url(data:image/svg+xml,%3C%3Fxml%20version%3D%221.0%22%20encoding%3D%22UTF-8%22%3F%3E%0A%3Csvg%20width%3D%2258px%22%20height%3D%2258px%22%20viewBox%3D%220%200%2058%2058%22%20version%3D%221.1%22%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20xmlns%3Axlink%3D%22http%3A//www.w3.org/1999/xlink%22%3E%0A%20%20%20%20%3C%21--%20Generator%3A%20Sketch%2044.1%20%2841455%29%20-%20http%3A//www.bohemiancoding.com/sketch%20--%3E%0A%20%20%20%20%3Ctitle%3Eicon-pause%3C/title%3E%0A%20%20%20%20%3Cdesc%3ECreated%20with%20Sketch.%3C/desc%3E%0A%20%20%20%20%3Cdefs%3E%3C/defs%3E%0A%20%20%20%20%3Cg%20id%3D%22Page-1%22%20stroke%3D%22none%22%20stroke-width%3D%221%22%20fill%3D%22none%22%20fill-rule%3D%22evenodd%22%3E%0A%20%20%20%20%20%20%20%20%3Cg%20id%3D%22icon-pause%22%20fill-rule%3D%22nonzero%22%20fill%3D%22%23000000%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%3Cpath%20d%3D%22M29%2C0%20C13.007813%2C0%200%2C13.011719%200%2C29%20C0%2C44.988281%2013.007813%2C58%2029%2C58%20C44.992188%2C58%2058%2C44.988281%2058%2C29%20C58%2C13.011719%2044.992188%2C0%2029%2C0%20Z%20M29%2C2%20C43.886719%2C2%2056%2C14.113281%2056%2C29%20C56%2C43.886719%2043.886719%2C56%2029%2C56%20C14.113281%2C56%202%2C43.886719%202%2C29%20C2%2C14.113281%2014.113281%2C2%2029%2C2%20Z%20M28.5625%2C6.007813%20C22.671875%2C6.128906%2016.964844%2C8.511719%2012.738281%2C12.734375%20C3.769531%2C21.703125%203.769531%2C36.296875%2012.738281%2C45.265625%20C12.933594%2C45.457031%2013.1875%2C45.558594%2013.445313%2C45.558594%20C13.703125%2C45.558594%2013.957031%2C45.457031%2014.152344%2C45.265625%20C14.542969%2C44.871094%2014.542969%2C44.242188%2014.152344%2C43.847656%20C5.964844%2C35.660156%205.960938%2C22.339844%2014.152344%2C14.152344%20C18.898438%2C9.402344%2025.699219%2C7.203125%2032.339844%2C8.265625%20C32.882813%2C8.355469%2033.398438%2C7.984375%2033.484375%2C7.4375%20C33.570313%2C6.890625%2033.199219%2C6.378906%2032.65625%2C6.289063%20C31.289063%2C6.074219%2029.921875%2C5.980469%2028.5625%2C6.007813%20Z%20M36.660156%2C7.386719%20C36.269531%2C7.402344%2035.910156%2C7.648438%2035.765625%2C8.035156%20C35.570313%2C8.554688%2035.832031%2C9.128906%2036.351563%2C9.324219%20C37.0625%2C9.585938%2037.765625%2C9.894531%2038.449219%2C10.238281%20C38.59375%2C10.3125%2038.75%2C10.347656%2038.902344%2C10.347656%20C39.265625%2C10.347656%2039.617188%2C10.148438%2039.796875%2C9.796875%20C40.042969%2C9.308594%2039.84375%2C8.703125%2039.351563%2C8.453125%20C38.601563%2C8.078125%2037.828125%2C7.738281%2037.050781%2C7.445313%20C36.921875%2C7.398438%2036.789063%2C7.382813%2036.660156%2C7.386719%20Z%20M42.433594%2C10.675781%20C42.179688%2C10.707031%2041.9375%2C10.835938%2041.765625%2C11.050781%20C41.425781%2C11.488281%2041.5%2C12.113281%2041.9375%2C12.453125%20C42.601563%2C12.976563%2043.246094%2C13.546875%2043.847656%2C14.152344%20C52.039063%2C22.339844%2052.039063%2C35.660156%2043.847656%2C43.847656%20C43.457031%2C44.242188%2043.457031%2C44.871094%2043.847656%2C45.265625%20C44.042969%2C45.457031%2044.300781%2C45.558594%2044.558594%2C45.558594%20C44.8125%2C45.558594%2045.070313%2C45.457031%2045.265625%2C45.265625%20C54.230469%2C36.296875%2054.230469%2C21.703125%2045.265625%2C12.734375%20C44.605469%2C12.078125%2043.898438%2C11.449219%2043.171875%2C10.878906%20C42.953125%2C10.710938%2042.6875%2C10.644531%2042.433594%2C10.675781%20Z%20M22%2C18%20C20.898438%2C18%2020%2C18.898438%2020%2C20%20L20%2C38%20C20%2C39.101563%2020.898438%2C40%2022%2C40%20L26%2C40%20C27.101563%2C40%2028%2C39.101563%2028%2C38%20L28%2C20%20C28%2C18.898438%2027.101563%2C18%2026%2C18%20L22%2C18%20Z%20M32%2C18%20C30.898438%2C18%2030%2C18.898438%2030%2C20%20L30%2C38%20C30%2C39.101563%2030.898438%2C40%2032%2C40%20L36%2C40%20C37.101563%2C40%2038%2C39.101563%2038%2C38%20L38%2C20%20C38%2C18.898438%2037.101563%2C18%2036%2C18%20L32%2C18%20Z%20M22%2C20%20L26%2C20%20L26%2C38%20L22%2C38%20L22%2C20%20Z%20M32%2C20%20L36%2C20%20L36%2C38%20L32%2C38%20L32%2C20%20Z%20M19.375%2C45.394531%20C18.984375%2C45.347656%2018.589844%2C45.527344%2018.386719%2C45.886719%20L17.386719%2C47.617188%20C17.109375%2C48.097656%2017.269531%2C48.707031%2017.75%2C48.984375%20C17.90625%2C49.074219%2018.078125%2C49.117188%2018.25%2C49.117188%20C18.59375%2C49.117188%2018.929688%2C48.9375%2019.113281%2C48.617188%20L20.113281%2C46.886719%20C20.390625%2C46.410156%2020.230469%2C45.796875%2019.75%2C45.519531%20C19.628906%2C45.453125%2019.5%2C45.410156%2019.375%2C45.394531%20Z%20M38.625%2C45.394531%20C38.496094%2C45.410156%2038.371094%2C45.453125%2038.25%2C45.519531%20C37.769531%2C45.796875%2037.609375%2C46.410156%2037.886719%2C46.890625%20L38.886719%2C48.621094%20C39.070313%2C48.941406%2039.40625%2C49.121094%2039.75%2C49.121094%20C39.921875%2C49.121094%2040.09375%2C49.074219%2040.25%2C48.984375%20C40.730469%2C48.707031%2040.890625%2C48.097656%2040.613281%2C47.621094%20L39.613281%2C45.890625%20C39.410156%2C45.53125%2039.011719%2C45.347656%2038.625%2C45.394531%20Z%20M34.1875%2C47.34375%20C34.058594%2C47.324219%2033.921875%2C47.332031%2033.785156%2C47.371094%20C33.253906%2C47.511719%2032.9375%2C48.0625%2033.078125%2C48.59375%20L33.597656%2C50.527344%20C33.71875%2C50.972656%2034.121094%2C51.265625%2034.5625%2C51.265625%20C34.648438%2C51.265625%2034.734375%2C51.257813%2034.824219%2C51.234375%20C35.355469%2C51.089844%2035.671875%2C50.542969%2035.53125%2C50.011719%20L35.015625%2C48.078125%20C34.90625%2C47.675781%2034.570313%2C47.398438%2034.1875%2C47.34375%20Z%20M23.8125%2C47.34375%20C23.429688%2C47.398438%2023.09375%2C47.675781%2022.984375%2C48.078125%20L22.46875%2C50.011719%20C22.324219%2C50.542969%2022.640625%2C51.089844%2023.175781%2C51.234375%20C23.261719%2C51.257813%2023.351563%2C51.265625%2023.4375%2C51.265625%20C23.875%2C51.265625%2024.28125%2C50.972656%2024.402344%2C50.527344%20L24.917969%2C48.59375%20C25.0625%2C48.0625%2024.746094%2C47.511719%2024.214844%2C47.371094%20C24.078125%2C47.332031%2023.941406%2C47.328125%2023.8125%2C47.34375%20Z%20M29%2C48%20C28.449219%2C48%2028%2C48.445313%2028%2C49%20L28%2C51%20C28%2C51.554688%2028.449219%2C52%2029%2C52%20C29.550781%2C52%2030%2C51.554688%2030%2C51%20L30%2C49%20C30%2C48.445313%2029.550781%2C48%2029%2C48%20Z%22%20id%3D%22Shape%22%3E%3C/path%3E%0A%20%20%20%20%20%20%20%20%3C/g%3E%0A%20%20%20%20%3C/g%3E%0A%3C/svg%3E%0A);
+      opacity: 1;
+      transform: scale(0.95); }
+    .b-content__btn_active {
+      display: block; }
+  .b-content__tracks {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    margin: 0 0 10px; }
+    @media (max-width: 819px) {
+      .b-content__tracks {
+        display: block; } }
+  .b-content__track {
+    cursor: pointer;
+    width: 33%;
+    text-align: center;
+    padding: 0 20px;
+    margin: 0 0 25px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    font: 400 14px/1.15 "PT Sans", sans-serif;
+    color: rgba(1, 1, 1, 0.9);
+    transition: color 0.2s ease; }
+    @media (max-width: 820px) {
+      .b-content__track {
+        font: 400 14px/1.1 "PT Serif", serif;
+        margin: 0 0 15px; } }
+    @media (max-width: 819px) {
+      .b-content__track {
+        width: 50%;
+        float: left; } }
+    .b-content__track:hover {
+      color: #010101; }
+  .b-content__soundcloud {
+    position: relative;
+    margin: 32px auto 0 auto;
+    display: flex;
+    width: 100px;
+    height: 15px;
+    text-indent: -9999px;
+    text-decoration: none;
+    color: transparent;
+    background-image: url(data:image/svg+xml,%3C%3Fxml%20version%3D%221.0%22%20encoding%3D%22UTF-8%22%3F%3E%0A%3Csvg%20width%3D%2299px%22%20height%3D%2215px%22%20viewBox%3D%220%200%2099%2015%22%20version%3D%221.1%22%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20xmlns%3Axlink%3D%22http%3A//www.w3.org/1999/xlink%22%3E%0A%20%20%20%20%3C%21--%20Generator%3A%20Sketch%2044.1%20%2841455%29%20-%20http%3A//www.bohemiancoding.com/sketch%20--%3E%0A%20%20%20%20%3Ctitle%3Eicon-soundcloud%3C/title%3E%0A%20%20%20%20%3Cdesc%3ECreated%20with%20Sketch.%3C/desc%3E%0A%20%20%20%20%3Cdefs%3E%3C/defs%3E%0A%20%20%20%20%3Cg%20id%3D%22Page-1%22%20stroke%3D%22none%22%20stroke-width%3D%221%22%20fill%3D%22none%22%20fill-rule%3D%22evenodd%22%3E%0A%20%20%20%20%20%20%20%20%3Cg%20id%3D%22icon-soundcloud%22%20fill%3D%22%23000000%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%3Cg%20id%3D%22Shape%22%20fill-rule%3D%22nonzero%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Cpath%20d%3D%22M18%2C0%20C15.8390628%2C0%2013.8%2C1.0734378%2012.6%2C2.8125%20L12.6%2C4.9125%20L12.7875%2C5.04375%20L13.0125%2C4.44375%20C13.8515628%2C2.4632814%2015.84375%2C1.2%2017.94375%2C1.2%20C20.94375%2C1.2%2023.34375%2C3.6%2023.34375%2C6.6%20L23.34375%2C7.8%20L24.24375%2C7.44375%20C24.6632814%2C7.2632814%2025.0804686%2C7.2%2025.5%2C7.2%20C27.3%2C7.2%2028.8%2C8.7%2028.8%2C10.5%20C28.8%2C12.3%2027.3%2C13.8%2025.5%2C13.8%20L12.6%2C13.8%20L12.6%2C15%20L25.5%2C15%20C27.9609378%2C15%2030%2C12.9609378%2030%2C10.5%20C30%2C8.0390628%2027.9609378%2C6%2025.5%2C6%20C25.2%2C6%2024.9%2C6.0515628%2024.6%2C6.1125%20C24.3%2C2.6929686%2021.4804686%2C0%2018%2C0%20Z%20M10.2%2C3%20C9.7804686%2C3%209.3609378%2C3.0515628%209%2C3.1125%20L9%2C15%20L10.2%2C15%20L10.2%2C3%20Z%20M10.8%2C3%20L10.8%2C15%20L12%2C15%20L12%2C3.3%20C11.6390628%2C3.1804686%2011.2195314%2C3.0609378%2010.8%2C3%20Z%20M8.4%2C3.3%20C7.9804686%2C3.4804686%207.5609378%2C3.6609378%207.2%2C3.9%20L7.2%2C15%20L8.4%2C15%20L8.4%2C3.3%20Z%20M6.6%2C4.3875%20C6.1195314%2C4.8070314%205.7%2C5.34375%205.4%2C5.94375%20L5.4%2C15%20L6.6%2C15%20L6.6%2C4.3875%20Z%20M3.9%2C6.6%20C3.7945314%2C6.6070314%203.6890628%2C6.6257814%203.6%2C6.65625%20L3.6%2C14.94375%20C3.7804686%2C15.0046878%204.0195314%2C15%204.2%2C15%20L4.8%2C15%20L4.8%2C6.65625%20C4.6195314%2C6.5953128%204.3804686%2C6.6%204.2%2C6.6%20C4.1109378%2C6.6%204.0054686%2C6.5929686%203.9%2C6.6%20Z%20M3%2C6.7875%20C2.5804686%2C6.9070314%202.1609378%2C7.0875%201.8%2C7.3875%20L1.8%2C14.2125%20C2.1609378%2C14.4515628%202.5804686%2C14.6929686%203%2C14.8125%20L3%2C6.7875%20Z%20M1.2%2C7.85625%20C0.4804686%2C8.6367186%200%2C9.6609378%200%2C10.8%20C0%2C11.9390628%200.4804686%2C12.9632814%201.2%2C13.74375%20L1.2%2C7.85625%20Z%22%3E%3C/path%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%3C/g%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%3Ctext%20id%3D%22SOUNDCLOUD%22%20font-family%3D%22PTSans-Regular%2C%20PT%20Sans%22%20font-size%3D%2210%22%20font-weight%3D%22normal%22%20letter-spacing%3D%220.300000012%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Ctspan%20x%3D%2235%22%20y%3D%2211%22%3ESOUNDCLOU%3C/tspan%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Ctspan%20x%3D%2293.2200001%22%20y%3D%2211%22%3ED%3C/tspan%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%3C/text%3E%0A%20%20%20%20%20%20%20%20%3C/g%3E%0A%20%20%20%20%3C/g%3E%0A%3C/svg%3E);
+    background-position: 0 0;
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 0.8;
+    transition: opacity 0.25s ease; }
+    @media (max-width: 820px) {
+      .b-content__soundcloud {
+        margin: 26px auto 0 auto; } }
+    @media (max-width: 819px) {
+      .b-content__soundcloud {
+        margin: 15px auto 0 auto; } }
+    .b-content__soundcloud:hover {
+      opacity: 1; }
+  .b-content__tea {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start; }
+    @media (max-width: 819px) {
+      .b-content__tea {
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start; } }
+  .b-content__tea-item {
+    width: 48%; }
+    @media (max-width: 819px) {
+      .b-content__tea-item {
+        width: 100%;
+        margin: 0 0 15px; } }
+  .b-content__tea-subtitle {
+    font: 700 18px/1.1 "PT Serif", serif;
+    margin: 0 0 10px; }
+    @media (max-width: 820px) {
+      .b-content__tea-subtitle {
+        font: 700 17px/1.2 "PT Serif", serif;
+        margin: 0 0 7px; } }
+  .b-content__tea-text {
+    font: 400 15px/1.5 "PT Serif", serif; }
+    @media (max-width: 820px) {
+      .b-content__tea-text {
+        font: 400 14px/1.4 "PT Serif", serif; } }
+  .b-content__audio {
+    visibility: hidden;
+    opacity: 0; }
+
+.b-footer {
+  background-color: transparent;
+  position: absolute;
+  right: 20px;
+  bottom: 80px;
+  text-align: right;
+  opacity: 0.9;
+  transition: all 0.2s linear; }
+  .b-footer__btn {
+    position: absolute;
+    right: 0;
+    bottom: -62px;
+    background-position: 0 0;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background: #fcfcfc;
+    transition: all 0.2s linear;
+    content: '';
+    display: block;
+    width: 40px;
+    height: 40px;
+    border-radius: 20px;
+    border: 1px rgba(140, 140, 140, 0.3) solid; }
+    @media (max-width: 819px) {
+      .b-footer__btn {
+        opacity: 0.7; } }
+    .b-footer__btn_active, .b-footer__btn:hover {
+      border: 1px #8c8c8c solid;
+      transition: all 0.3s ease; }
+    .b-footer__btn:hover {
+      transform: scale(0.95); }
+    .b-footer__btn:before {
+      content: '';
+      display: block;
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      transform: translateX(-50%) translateY(-50%);
+      display: block;
+      width: 19px;
+      height: 19px;
+      background-image: url(data:image/svg+xml,%3C%3Fxml%20version%3D%221.0%22%20encoding%3D%22UTF-8%22%3F%3E%0A%3Csvg%20width%3D%2224px%22%20height%3D%2224px%22%20viewBox%3D%220%200%2024%2024%22%20version%3D%221.1%22%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20xmlns%3Axlink%3D%22http%3A//www.w3.org/1999/xlink%22%3E%0A%20%20%20%20%3C%21--%20Generator%3A%20Sketch%2044.1%20%2841455%29%20-%20http%3A//www.bohemiancoding.com/sketch%20--%3E%0A%20%20%20%20%3Ctitle%3EShape%3C/title%3E%0A%20%20%20%20%3Cdesc%3ECreated%20with%20Sketch.%3C/desc%3E%0A%20%20%20%20%3Cdefs%3E%3C/defs%3E%0A%20%20%20%20%3Cg%20id%3D%22Page-1%22%20stroke%3D%22none%22%20stroke-width%3D%221%22%20fill%3D%22none%22%20fill-rule%3D%22evenodd%22%3E%0A%20%20%20%20%20%20%20%20%3Cg%20id%3D%22icon-email%22%20transform%3D%22translate%28-1.000000%2C%20-1.000000%29%22%20fill-rule%3D%22nonzero%22%20fill%3D%22%234C4C4C%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%3Cpath%20d%3D%22M13.1875%2C1%20C5.824219%2C0.890625%20-0.085937%2C7.484375%201.15625%2C15.03125%20C2%2C20.152344%206.203125%2C24.179688%2011.34375%2C24.875%20C14.808594%2C25.34375%2018.046875%2C24.34375%2020.5%2C22.375%20L19.25%2C20.8125%20C17.203125%2C22.453125%2014.511719%2C23.300781%2011.59375%2C22.90625%20C7.339844%2C22.332031%203.851563%2C18.953125%203.15625%2C14.71875%20C2.109375%2C8.347656%206.992188%2C2.910156%2013.15625%2C3%20C18.410156%2C3.078125%2022.839844%2C7.433594%2023%2C12.6875%20C23.003906%2C12.800781%2023%2C12.910156%2023%2C13.03125%20C22.992188%2C15.234375%2021.207031%2C17%2019%2C17%20C17.882813%2C17%2017%2C16.117188%2017%2C15%20L17%2C7%20L15%2C7%20L15%2C7.78125%20C14.28125%2C7.292969%2013.425781%2C7%2012.5%2C7%20C10.027344%2C7%208%2C9.027344%208%2C11.5%20L8%2C14.5%20C8%2C16.972656%2010.027344%2C19%2012.5%2C19%20C13.847656%2C19%2015.046875%2C18.386719%2015.875%2C17.4375%20C16.609375%2C18.371094%2017.730469%2C19%2019%2C19%20C22.285156%2C19%2024.988281%2C16.320313%2025%2C13.03125%20C25%2C12.898438%2025.003906%2C12.769531%2025%2C12.625%20C24.808594%2C6.289063%2019.523438%2C1.09375%2013.1875%2C1%20Z%20M12.5%2C9%20C13.890625%2C9%2015%2C10.109375%2015%2C11.5%20L15%2C14.5%20C15%2C15.890625%2013.890625%2C17%2012.5%2C17%20C11.109375%2C17%2010%2C15.890625%2010%2C14.5%20L10%2C11.5%20C10%2C10.109375%2011.109375%2C9%2012.5%2C9%20Z%22%20id%3D%22Shape%22%3E%3C/path%3E%0A%20%20%20%20%20%20%20%20%3C/g%3E%0A%20%20%20%20%3C/g%3E%0A%3C/svg%3E);
+      background-position: 0 0;
+      background-repeat: no-repeat;
+      background-size: cover; }
+  .b-footer:hover {
+    opacity: 1; }
+  .b-footer__text {
+    padding: 10px 20px;
+    border-right: 1px rgba(140, 140, 140, 0.7) solid;
+    position: relative;
+    left: -10px;
+    opacity: 0;
+    visibility: hidden;
+    background: rgba(252, 252, 252, 0.97);
+    border-radius: 5px 0 0 5px;
+    transition: all 0.4s ease-out; }
+    .b-footer__text_active {
+      opacity: 1;
+      visibility: visible;
+      left: -1px; }
+  .b-footer__address {
+    font: 400 14px/1.7 "PT Sans", sans-serif;
+    color: #383838; }
+  .b-footer__contacts {
+    font: 400 14px/1.7 "PT Sans", sans-serif;
+    color: #383838; }
+  .b-footer__link {
+    font: 400 14px/1.7 "PT Sans", sans-serif;
+    color: #383838; }
+
+.b-nav {
+  position: absolute;
+  left: 20px;
+  top: 0;
+  z-index: 1000; }
+  @media (max-width: 819px) {
+    .b-nav {
+      left: 0;
+      top: 20px;
+      width: 100%;
+      height: auto; } }
+  .b-nav__container {
+    height: 100vh;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; }
+    @media (max-width: 819px) {
+      .b-nav__container {
+        flex-direction: row;
+        align-items: flex-start;
+        height: auto; } }
+  .b-nav__link {
+    margin: 10px 0;
+    position: relative;
+    background-position: 0 0;
+    background-repeat: no-repeat;
+    transition: all 0.2s linear;
+    content: '';
+    left: 0;
+    display: block;
+    width: 40px;
+    height: 40px;
+    background: rgba(252, 252, 252, 0.9);
+    border-radius: 20px;
+    border: 1px rgba(140, 140, 140, 0.3) solid; }
+    @media (max-width: 819px) {
+      .b-nav__link {
+        margin: 0 10px; } }
+    .b-nav__link:before {
+      content: '';
+      display: block;
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      transform: translateX(-50%) translateY(-50%);
+      background-position: 0 0;
+      background-repeat: no-repeat;
+      background-size: contain; }
+    .b-nav__link[data-slide=tea]:before {
+      left: calc(50% + 1px);
+      opacity: 0.8;
+      width: 22px;
+      height: 21px;
+      background-image: url(data:image/svg+xml,%3C%3Fxml%20version%3D%221.0%22%20encoding%3D%22UTF-8%22%3F%3E%0A%3Csvg%20width%3D%2222px%22%20height%3D%2221px%22%20viewBox%3D%220%200%2022%2021%22%20version%3D%221.1%22%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20xmlns%3Axlink%3D%22http%3A//www.w3.org/1999/xlink%22%3E%0A%20%20%20%20%3C%21--%20Generator%3A%20Sketch%2044.1%20%2841455%29%20-%20http%3A//www.bohemiancoding.com/sketch%20--%3E%0A%20%20%20%20%3Ctitle%3Eicon-tea%3C/title%3E%0A%20%20%20%20%3Cdesc%3ECreated%20with%20Sketch.%3C/desc%3E%0A%20%20%20%20%3Cdefs%3E%3C/defs%3E%0A%20%20%20%20%3Cg%20id%3D%22Page-1%22%20stroke%3D%22none%22%20stroke-width%3D%221%22%20fill%3D%22none%22%20fill-rule%3D%22evenodd%22%3E%0A%20%20%20%20%20%20%20%20%3Cg%20id%3D%22icon-tea%22%20fill-rule%3D%22nonzero%22%20fill%3D%22%234C4C4C%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%3Cpath%20d%3D%22M6.04446043%2C0.112374101%20C6.24968825%2C0.0997122302%206.43935252%2C-0.00685851319%206.64748201%2C0.00580335731%20C6.81920863%2C-0.00685851319%206.98803357%2C0.0559232614%207.12810552%2C0.151942446%20C7.32726619%2C0.298345324%207.4776259%2C0.501990408%207.58630695%2C0.721990408%20C7.87647482%2C1.30206235%207.96642686%2C1.95309353%208.06059952%2C2.58697842%20C8.10465228%2C2.84839329%208.087506%2C3.11402878%208.08882494%2C3.37781775%20C8.09093525%2C3.46592326%208.07616307%2C3.55270983%208.06165468%2C3.63896882%20C8.56127098%2C3.60388489%209.05745803%2C3.53239808%209.55733813%2C3.50074341%20C9.76414868%2C3.47199041%209.97386091%2C3.49625899%2010.1809353%2C3.467506%20C10.7435971%2C3.4482494%2011.3041487%2C3.39100719%2011.8654916%2C3.34880096%20C12.0140048%2C3.32453237%2012.1654197%2C3.33429257%2012.3134053%2C3.30422062%20C12.4954197%2C2.82465228%2012.6571223%2C2.33664269%2012.7971942%2C1.84309353%20C12.883717%2C1.52390887%2012.9644365%2C1.20103118%2012.9947722%2C0.871031175%20C12.9984652%2C0.827242206%2013.0090168%2C0.781079137%2013.0451559%2C0.75206235%20C13.3303118%2C0.466906475%2013.734964%2C0.297817746%2014.1398801%2C0.317074341%20C14.4292566%2C0.339760192%2014.7146763%2C0.439736211%2014.9447002%2C0.618848921%20C15.2747002%2C0.860215827%2015.4799281%2C1.25616307%2015.5010312%2C1.66318945%20C15.515012%2C2.04119904%2015.3804796%2C2.41155875%2015.1765707%2C2.72573141%20C15.0597122%2C2.91618705%2014.9067146%2C3.08%2014.763741%2C3.25014388%20C14.9423261%2C3.24565947%2015.1182734%2C3.2736211%2015.2960671%2C3.28258993%20C15.4928537%2C3.31028777%2015.7001918%2C3.30817746%2015.8816787%2C3.40129496%20C16.2567866%2C3.58568345%2016.548801%2C3.89985612%2016.7941247%2C4.23170264%20C17.0220384%2C4.54033573%2017.2164508%2C4.87693046%2017.3433333%2C5.24016787%20C17.3831655%2C5.37074341%2017.4311751%2C5.52453237%2017.3554676%2C5.65141487%20C17.2995444%2C5.65088729%2017.2407194%2C5.65616307%2017.1908633%2C5.62714628%20C16.4364269%2C5.23172662%2015.5930935%2C5.02095923%2014.7465947%2C4.95395683%20C14.5490168%2C4.95263789%2014.3506475%2C4.94498801%2014.1543885%2C4.97242206%20C13.7877218%2C4.98191847%2013.4242206%2C5.03045564%2013.0586091%2C5.05788969%20C12.8868825%2C5.24069544%2012.71753%2C5.42561151%2012.5489688%2C5.61158273%20C12.4927818%2C5.67964029%2012.4373861%2C5.74901679%2012.3695923%2C5.80652278%20C12.3959712%2C5.71129496%2012.4505755%2C5.61791367%2012.4310552%2C5.51635492%20C12.3959712%2C5.5240048%2012.3590408%2C5.528753%2012.3294964%2C5.55064748%20C12.1968106%2C5.64402878%2012.0833813%2C5.76167866%2011.9791847%2C5.88513189%20C11.6114628%2C6.29453237%2011.3041487%2C6.75616307%2011.052494%2C7.24470024%20C11.0335012%2C7.04791367%2011.0738609%2C6.85323741%2011.1194964%2C6.66278177%20C11.2363549%2C6.17741007%2011.4225899%2C5.7128777%2011.5755875%2C5.23858513%20C11.2949161%2C5.227506%2011.0189928%2C5.29741007%2010.7380576%2C5.29345324%20C10.5729257%2C5.34357314%2010.3985612%2C5.29160671%2010.2329017%2C5.33618705%20C10.0493046%2C5.35016787%209.86254197%2C5.32220624%209.68052758%2C5.36071942%20C9.41673861%2C5.37417266%209.15110312%2C5.35254197%208.88863309%2C5.38841727%20C8.53515588%2C5.39131894%208.18141487%2C5.38841727%207.82899281%2C5.41769784%20C7.80155875%2C5.667506%207.79681055%2C5.91968825%207.82371703%2C6.16976019%20C7.83901679%2C6.51189448%207.89441247%2C6.85191847%207.98119904%2C7.18297362%20C7.98621103%2C7.21673861%207.98647482%2C7.25076739%207.98199041%2C7.28532374%20C7.78177458%2C7.15184652%207.64935252%2C6.94556355%207.52510791%2C6.74482014%20C7.27529976%2C6.32697842%207.068753%2C5.88539568%206.86880096%2C5.44196643%20C6.60633094%2C5.44486811%206.34280576%2C5.43194245%206.08191847%2C5.46544365%20C5.55882494%2C5.46808153%205.03177458%2C5.51793765%204.52688249%2C5.66223022%20C4.40105516%2C5.69573141%204.27311751%2C5.73239808%204.14148681%2C5.72633094%20C3.71019185%2C5.71261391%203.31345324%2C5.50844125%202.96868106%2C5.26285372%20C2.71834532%2C5.08611511%202.48304556%2C4.88853717%202.26199041%2C4.67671463%20C2.06678657%2C4.46568345%201.86446043%2C4.25043165%201.74628297%2C3.98453237%20C1.69141487%2C3.86134293%201.66239808%2C3.69330935%201.76738609%2C3.58832134%20C1.86973621%2C3.50496403%202.00611511%2C3.4770024%202.13563549%2C3.48386091%20C2.38676259%2C3.47278177%202.63472422%2C3.5247482%202.87767386%2C3.58251799%20C3.39443645%2C3.71045564%203.92465228%2C3.80251799%204.45829736%2C3.79434053%20C4.69623501%2C3.81465228%204.93417266%2C3.7853717%205.1723741%2C3.79223022%20C5.49393285%2C3.75846523%205.81865707%2C3.75872902%206.1383693%2C3.70940048%20C6.0117506%2C3.39918465%205.89515588%2C3.08527578%205.77275779%2C2.77347722%20C5.63083933%2C2.38860911%205.42323741%2C2.01956835%205.11961631%2C1.73889688%20C4.93997602%2C1.54527578%204.71232614%2C1.40757794%204.51184652%2C1.23822542%20C4.41609113%2C1.15724221%204.32007194%2C1.0401199%204.35911271%2C0.90558753%20C4.43772182%2C0.673189448%204.63767386%2C0.515179856%204.80254197%2C0.344244604%20C4.89381295%2C0.248752998%205.00856115%2C0.168561151%205.14309353%2C0.153788969%20C5.44143885%2C0.10736211%205.74664269%2C0.166714628%206.04446043%2C0.112374101%20L6.04446043%2C0.112374101%20Z%22%20id%3D%22Shape%22%3E%3C/path%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%3Cpath%20d%3D%22M8.96407674%2C6.59314149%20C8.94956835%2C6.43486811%209.05719424%2C6.26736211%209.20834532%2C6.21829736%20C9.51935252%2C6.1623741%209.82930456%2C6.27131894%2010.1081295%2C6.40031175%20C10.4238849%2C6.55805755%2010.7230216%2C6.77383693%2010.9174341%2C7.0735012%20C11.0469544%2C7.27160671%2011.1158034%2C7.52220624%2011.0511751%2C7.75539568%20C11.0039568%2C7.98673861%2010.8543885%2C8.17376499%2010.7296163%2C8.3671223%20C11.1754197%2C8.441247%2011.6138369%2C8.57947242%2012.0055635%2C8.80791367%20C12.4666667%2C9.07486811%2012.8713189%2C9.42570743%2013.3213429%2C9.70954436%20C13.836259%2C10.0382254%2014.396283%2C10.2954197%2014.9811031%2C10.4721583%20C16.178705%2C10.8346043%2017.4322302%2C10.9559472%2018.67494%2C11.0329736%20C18.9039089%2C11.0319185%2019.1326139%2C11.0506475%2019.3615827%2C11.037458%20C19.8015827%2C11.0356115%2020.2397362%2C10.9767866%2020.6715588%2C10.8923741%20C21.0018225%2C10.8298561%2021.3244365%2C10.7317266%2021.6557554%2C10.673693%20C21.7536211%2C10.6678897%2021.8725899%2C10.6554916%2021.9453957%2C10.736211%20C22.0105516%2C10.8372422%2021.9617506%2C10.9654436%2021.8984412%2C11.0548681%20C21.7617986%2C11.2440048%2021.5755635%2C11.3909353%2021.3822062%2C11.5186091%20C21.0105276%2C11.7581295%2020.603765%2C11.9364508%2020.1935731%2C12.0986811%20C19.7279856%2C12.2772662%2019.2571223%2C12.4439808%2018.7757074%2C12.5750839%20C18.1850839%2C12.73494%2017.5759952%2C12.8557554%2016.9616307%2C12.8343885%20C16.7097122%2C12.812494%2016.452518%2C12.7752998%2016.2246043%2C12.6592326%20C15.6885851%2C12.3735492%2015.1114149%2C12.1786091%2014.5577218%2C11.9317026%20C13.6616307%2C11.5436691%2012.8428297%2C10.9994724%2012.0759952%2C10.3993525%20C11.7668345%2C10.1371463%2011.4429017%2C9.89155875%2011.1564269%2C9.60376499%20C10.8517506%2C9.34604317%2010.5840048%2C9.048753%2010.2877698%2C8.78206235%20C9.91952038%2C9.08515588%209.50009592%2C9.31491607%209.11021583%2C9.58741007%20C8.99968825%2C9.65757794%208.89707434%2C9.73908873%208.78681055%2C9.80925659%20C8.53673861%2C9.9622542%208.30196643%2C10.1382014%208.05664269%2C10.2983213%20C7.16609113%2C10.8770743%206.25786571%2C11.4320863%205.30532374%2C11.903741%20C4.3211271%2C12.3833094%203.29419664%2C12.8090647%202.20606715%2C12.9781535%20C1.4801199%2C13.0886811%200.709328537%2C13.0841966%200.0221582734%2C12.7956115%20C0.436306954%2C12.4566427%200.948585132%2C12.2835971%201.42577938%2C12.0570024%20C2.58091127%2C11.5370743%203.68328537%2C10.9058273%204.85398082%2C10.4196643%20C5.31640288%2C10.233693%205.72553957%2C9.94378897%206.14153477%2C9.67393285%20C6.40004796%2C9.50484412%206.65856115%2C9.33153477%206.94318945%2C9.20834532%20C7.12256595%2C9.12551559%207.28505995%2C9.01129496%207.44570743%2C8.89733813%20C7.75460432%2C8.67311751%208.05215827%2C8.43306954%208.33335731%2C8.17508393%20C8.51985612%2C7.98199041%208.74170264%2C7.80868106%208.8501199%2C7.55544365%20C8.98755396%2C7.25366906%208.96592326%2C6.91601918%208.96407674%2C6.59314149%20L8.96407674%2C6.59314149%20Z%22%20id%3D%22Shape%22%3E%3C/path%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%3Cpath%20d%3D%22M9.21652278%2C10.1411031%20C9.31676259%2C10.1202638%209.42438849%2C10.0959952%209.5246283%2C10.1294964%20C9.69899281%2C10.2017746%209.88047962%2C10.2679856%2010.028729%2C10.3885372%20C10.2999041%2C10.5684412%2010.5309832%2C10.800048%2010.7530935%2C11.0361391%20C10.8063789%2C11.0997122%2010.8754916%2C11.1593285%2010.8873621%2C11.2463789%20C10.9638609%2C11.6460192%2010.9116307%2C12.0554197%2010.8496403%2C12.4532134%20C11.6882254%2C12.3540288%2012.5099281%2C12.1379856%2013.3070983%2C11.8628537%20C13.452446%2C11.8322542%2013.606235%2C11.8567866%2013.7333813%2C11.9340767%20C14.0681295%2C12.1234772%2014.3195204%2C12.4284173%2014.5321343%2C12.7431175%20C14.7257554%2C13.0441007%2014.8879856%2C13.3796403%2014.9127818%2C13.7418225%20C14.8958993%2C13.8684412%2014.8666187%2C14.0217026%2014.7431655%2C14.0879137%20C14.5880576%2C14.1567626%2014.4110552%2C14.1665228%2014.247506%2C14.1248441%20C14.088705%2C14.103741%2013.9655156%2C13.9913669%2013.8167386%2C13.9428297%20C13.5052038%2C13.8330935%2013.1725659%2C13.8156835%2012.8467866%2C13.788777%20C12.4777458%2C13.79247%2012.1076499%2C13.7729496%2011.7401918%2C13.8117266%20C11.5447242%2C13.8046043%2011.3526859%2C13.8439089%2011.1577458%2C13.8428537%20C11.003693%2C13.873717%2010.8448921%2C13.854988%2010.6921583%2C13.8942926%20C10.6924221%2C14.1865707%2010.6845084%2C14.4793765%2010.6971703%2C14.7713909%20C10.7317266%2C14.9552518%2010.7093046%2C15.1433333%2010.7377938%2C15.3282494%20C10.7354197%2C15.4422062%2010.7844844%2C15.5490408%2010.7731415%2C15.6635252%20C10.8815588%2C16.6355875%2011.0981295%2C17.5931415%2011.1777938%2C18.5683693%20C11.1938849%2C19.0057314%2011.2284412%2C19.4568106%2011.0978657%2C19.8815108%20C11.0342926%2C20.0867386%2010.8955396%2C20.3019904%2010.6721103%2C20.3494724%20C10.5745084%2C20.3645084%2010.4742686%2C20.3576499%2010.3766667%2C20.3486811%20C10.0801679%2C20.2568825%209.82007194%2C20.0777698%209.58107914%2C19.8838849%20C9.37057554%2C19.7089928%209.16851319%2C19.5232854%208.98597122%2C19.3188489%20C8.62458034%2C18.9345084%208.29853717%2C18.5156115%208.01997602%2C18.0671703%20C7.91340528%2C17.8841007%207.79443645%2C17.7010312%207.74721823%2C17.4921103%20C8.08565947%2C17.6770264%208.43729017%2C17.9028297%208.83798561%2C17.8893765%20C9.10573141%2C17.8951799%209.37558753%2C17.6976019%209.42544365%2C17.4298561%20C9.4623741%2C16.9402638%209.39721823%2C16.4530456%209.33944844%2C15.9684652%20C9.30647482%2C15.7600719%209.29882494%2C15.547458%209.24870504%2C15.3419664%20C9.23498801%2C15.0924221%209.18908873%2C14.8452518%209.16376499%2C14.5959712%20C9.1347482%2C14.4208153%209.12736211%2C14.2430216%209.09386091%2C14.0689209%20C8.81477218%2C14.0760432%208.53964029%2C14.1322302%208.26107914%2C14.152542%20C7.84798561%2C14.2045084%207.43330935%2C14.2430216%207.0183693%2C14.2783693%20C6.81577938%2C14.2736211%206.61239808%2C14.3123981%206.41059952%2C14.2786331%20C6.08534772%2C14.2253477%205.79359712%2C14.0520384%205.54088729%2C13.8470743%20C5.25071942%2C13.596211%204.99484412%2C13.2796643%204.90726619%2C12.8984892%20C4.87323741%2C12.7257074%204.87930456%2C12.5104556%205.03810552%2C12.3991367%20C5.25916067%2C12.2442926%205.54669065%2C12.2838609%205.80019185%2C12.3002158%20C6.48261391%2C12.4102158%207.17083933%2C12.4743165%207.85959233%2C12.5257554%20C8.04529976%2C12.5207434%208.22889688%2C12.5597842%208.41486811%2C12.5521343%20C8.59820144%2C12.5463309%208.78100719%2C12.5626859%208.96407674%2C12.56506%20C8.967506%2C12.3505995%208.93215827%2C12.1377218%208.93901679%2C11.9232614%20C8.93136691%2C11.4489688%208.96038369%2C10.9746763%209.02633094%2C10.5051319%20C9.05165468%2C10.3695444%209.07302158%2C10.2023022%209.21652278%2C10.1411031%20L9.21652278%2C10.1411031%20Z%22%20id%3D%22Shape%22%3E%3C/path%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%3Cpath%20d%3D%22M7.31645084%2C14.5972902%20C7.5135012%2C14.5440048%207.70764988%2C14.638705%207.87884892%2C14.7273381%20C8.12153477%2C14.8568585%208.39033573%2C14.9858513%208.52829736%2C15.2377698%20C8.67338129%2C15.4820384%208.64621103%2C15.7848681%208.55071942%2C16.0420624%20C8.40721823%2C16.4184892%208.16242206%2C16.7492806%207.87805755%2C17.0315348%20C7.56968825%2C17.3541487%207.21330935%2C17.6311271%206.82263789%2C17.8471703%20C6.60395683%2C17.9611271%206.37129496%2C18.0703357%206.12043165%2C18.0777218%20C5.94580336%2C18.0756115%205.76880096%2C18.0793046%205.59892086%2C18.1244125%20C5.29292566%2C18.198801%205.02122302%2C18.3726379%204.71285372%2C18.4401679%20C4.39340528%2C18.5071703%204.07211031%2C18.5696882%203.74764988%2C18.6052998%20C3.60678657%2C18.605036%203.46724221%2C18.651199%203.32664269%2C18.6227098%20C3.21136691%2C18.6047722%203.07604317%2C18.5992326%202.99664269%2C18.500048%20C2.95100719%2C18.356283%203.06390887%2C18.2336211%203.15333333%2C18.136283%20C3.47172662%2C17.811295%203.85738609%2C17.5628058%204.24119904%2C17.322494%20C4.6318705%2C17.0908873%205.00434053%2C16.8289448%205.3517506%2C16.5361391%20C5.66381295%2C16.2694484%205.97270983%2C15.9958993%206.23913669%2C15.6822542%20C6.50081535%2C15.4160911%206.73426859%2C15.1235492%207.00280576%2C14.863717%20C7.10199041%2C14.7695444%207.19009592%2C14.6566427%207.31645084%2C14.5972902%20L7.31645084%2C14.5972902%20Z%22%20id%3D%22Shape%22%3E%3C/path%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%3Cpath%20d%3D%22M11.458729%2C14.6516307%20C11.5671463%2C14.6273621%2011.6771463%2C14.6569065%2011.7842446%2C14.6761631%20C12.1754436%2C14.7708633%2012.5347242%2C14.9586811%2012.8990168%2C15.1243405%20C13.0984412%2C15.2317026%2013.3073621%2C15.3198082%2013.5017746%2C15.4366667%20C13.8357314%2C15.599952%2014.1625659%2C15.7941007%2014.5271223%2C15.8803597%20C14.7582014%2C15.9022542%2014.9206954%2C16.0829496%2015.0868825%2C16.2251319%20C15.3461871%2C16.4870743%2015.5899281%2C16.767482%2015.7890887%2C17.078753%20C15.8695444%2C17.2080096%2015.9465707%2C17.3420144%2015.9882494%2C17.4894724%20C16.0053957%2C17.5395923%2015.9995923%2C17.5947242%2015.9816547%2C17.6440528%20C15.8906475%2C17.9215588%2015.8661151%2C18.2141007%2015.8323501%2C18.5024221%20C15.8009592%2C18.6994724%2015.7806475%2C18.9168345%2015.6442686%2C19.0740528%20C15.5247722%2C19.2006715%2015.3306235%2C19.1919664%2015.1768345%2C19.145012%20C15.0098561%2C19.0843405%2014.8291607%2C19.1568825%2014.6935731%2C19.2568585%20C14.5653717%2C19.3452278%2014.4595923%2C19.4810791%2014.2970983%2C19.5058753%20C14.1905276%2C19.4839808%2014.1150839%2C19.4003597%2014.0507194%2C19.3191127%20C13.8043405%2C18.9764508%2013.5513669%2C18.6382734%2013.3123741%2C18.2903357%20C13.1176978%2C18.0123022%2012.9578417%2C17.7094724%2012.846259%2C17.388705%20C12.778729%2C17.2048441%2012.7246523%2C17.0167626%2012.6602878%2C16.8321103%20C12.4859233%2C16.371271%2012.1416787%2C16.0040767%2011.7855635%2C15.6756595%20C11.6631655%2C15.5785851%2011.5602878%2C15.4598801%2011.4365707%2C15.3646523%20C11.3123261%2C15.241199%2011.1622302%2C15.1132614%2011.1361151%2C14.9299281%20C11.1514149%2C14.7703357%2011.3181295%2C14.6827578%2011.458729%2C14.6516307%20L11.458729%2C14.6516307%20Z%22%20id%3D%22Shape%22%3E%3C/path%3E%0A%20%20%20%20%20%20%20%20%3C/g%3E%0A%20%20%20%20%3C/g%3E%0A%3C/svg%3E); }
+    .b-nav__link[data-slide=about-me]:before {
+      top: calc(50% + -1px);
+      opacity: 0.8;
+      width: 18px;
+      height: 26px;
+      background-image: url(data:image/svg+xml,%3C%3Fxml%20version%3D%221.0%22%20encoding%3D%22UTF-8%22%3F%3E%0A%3Csvg%20width%3D%2218px%22%20height%3D%2226px%22%20viewBox%3D%220%200%2018%2026%22%20version%3D%221.1%22%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20xmlns%3Axlink%3D%22http%3A//www.w3.org/1999/xlink%22%3E%0A%20%20%20%20%3C%21--%20Generator%3A%20Sketch%2044.1%20%2841455%29%20-%20http%3A//www.bohemiancoding.com/sketch%20--%3E%0A%20%20%20%20%3Ctitle%3Eicon-meditation%3C/title%3E%0A%20%20%20%20%3Cdesc%3ECreated%20with%20Sketch.%3C/desc%3E%0A%20%20%20%20%3Cdefs%3E%3C/defs%3E%0A%20%20%20%20%3Cg%20id%3D%22Page-1%22%20stroke%3D%22none%22%20stroke-width%3D%221%22%20fill%3D%22none%22%20fill-rule%3D%22evenodd%22%3E%0A%20%20%20%20%20%20%20%20%3Cg%20id%3D%22icon-meditation%22%20fill-rule%3D%22nonzero%22%20fill%3D%22%234C4C4C%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%3Cpath%20d%3D%22M9%2C0%20C7.25252771%2C0%205.82352941%2C1.58777588%205.82352941%2C3.52941176%20C5.82352941%2C5.47104765%207.25252771%2C7.05882353%209%2C7.05882353%20C10.7474723%2C7.05882353%2012.1764706%2C5.47104765%2012.1764706%2C3.52941176%20C12.1764706%2C1.58777588%2010.7474723%2C0%209%2C0%20Z%20M9%2C1.17647059%20C10.1767002%2C1.17647059%2011.1176471%2C2.22196706%2011.1176471%2C3.52941176%20C11.1176471%2C4.83685647%2010.1767002%2C5.88235294%209%2C5.88235294%20C7.82329976%2C5.88235294%206.88235294%2C4.83685647%206.88235294%2C3.52941176%20C6.88235294%2C2.22196706%207.82329976%2C1.17647059%209%2C1.17647059%20Z%20M9%2C8.23529412%20C7.012638%2C8.23529412%204.42555147%2C8.85110294%204.42555147%2C8.85110294%20C4.33869512%2C8.87178294%204.25804241%2C8.91544118%204.19186594%2C8.97977941%20L4.181526%2C8.98897059%20C3.62316176%2C9.17739%203.18267476%2C9.59099294%202.92624094%2C10.1631435%20L2.92417306%2C10.1631435%20L2.91176471%2C10.1746324%20C2.84765612%2C10.2343753%202.79595588%2C10.3125%202.76286765%2C10.3998165%20L0.748621588%2C15.7996324%20C0.721737%2C15.8731618%200.709329176%2C15.9535847%200.709329176%2C16.0317094%20C0.624540706%2C16.2637871%200.529411765%2C16.4935665%200.529411765%2C16.7647059%20C0.529411765%2C17.8952206%201.36488971%2C18.8235294%202.38235294%2C18.8235294%20C2.549862%2C18.8235294%202.70082747%2C18.7936582%202.82904412%2C18.7591912%20L4.00367647%2C18.4375%20C3.95818041%2C18.4949447%203.93336424%2C18.5363053%203.87752771%2C18.6006435%20C3.59834559%2C18.9131435%203.20128676%2C19.2853859%202.80216006%2C19.6346506%20C2.00390612%2C20.33318%201.19944853%2C20.9397976%201.19944853%2C20.9397976%20C1.12706788%2C20.9926471%201.06916347%2C21.0638788%201.02987159%2C21.1488971%20C0.432214941%2C21.6268382%200%2C22.3552388%200%2C23.2352941%20C0%2C24.6897976%201.07329976%2C25.8823529%202.38235294%2C25.8823529%20L15.6176471%2C25.8823529%20C16.9267002%2C25.8823529%2018%2C24.6897976%2018%2C23.2352941%20C18%2C22.3483459%2017.559513%2C21.6153494%2016.9556527%2C21.1374082%20C16.9163603%2C21.0569853%2016.8625922%2C20.9880518%2016.7943473%2C20.9352024%20C16.7943473%2C20.9352024%2015.9919576%2C20.3056065%2015.1957721%2C19.5886947%20C14.7966454%2C19.2325371%2014.4016544%2C18.8511029%2014.1204044%2C18.5363053%20C14.0935204%2C18.5041359%2014.0831804%2C18.4857535%2014.0583642%2C18.4558824%20L15.1709559%2C18.7591912%20C15.2991731%2C18.7936582%2015.450138%2C18.8235294%2015.6176471%2C18.8235294%20C16.6351103%2C18.8235294%2017.4705882%2C17.8952206%2017.4705882%2C16.7647059%20C17.4705882%2C16.4912682%2017.3733914%2C16.2614888%2017.2886029%2C16.0294118%20C17.2886029%2C15.9512871%2017.2761951%2C15.8731618%2017.2493105%2C15.7996324%20L15.2350645%2C10.3998165%20C15.2019762%2C10.3125%2015.1523439%2C10.2343753%2015.0882353%2C10.1746324%20L15.0737591%2C10.1631435%20C14.8152574%2C9.59099294%2014.3768382%2C9.17739%2013.8164061%2C8.98897059%20L13.8060662%2C8.97977941%20C13.7398897%2C8.91544118%2013.659237%2C8.87178294%2013.5744485%2C8.85110294%20C13.5744485%2C8.85110294%2010.9852941%2C8.23529412%209%2C8.23529412%20Z%20M9%2C9.41176471%20C10.7495407%2C9.41176471%2013.2146142%2C9.97242647%2013.3014706%2C9.99310647%20C13.3324909%2C10.0045959%2013.3635113%2C10.0137871%2013.3945311%2C10.0183824%20C13.7895221%2C10.0873165%2014.1079966%2C10.3906253%2014.2320775%2C10.7996324%20C14.2610294%2C10.8938418%2014.3085939%2C10.9788606%2014.3747704%2C11.0454965%20L14.306526%2C10.9834559%20L16.1656708%2C15.9696694%20L16.3083642%2C15.7169118%20C16.2049632%2C15.9030329%2016.2008275%2C16.1374082%2016.3000922%2C16.3258271%20C16.3724723%2C16.4636947%2016.4117647%2C16.6084559%2016.4117647%2C16.7647059%20C16.4117647%2C17.2587318%2016.0622704%2C17.6470588%2015.6176471%2C17.6470588%20C15.5638789%2C17.6470588%2015.5018382%2C17.6378676%2015.4253218%2C17.6171876%20C15.4232539%2C17.61489%2015.4232539%2C17.61489%2015.4232539%2C17.6171876%20L13.377987%2C17.0588235%20C13.3717834%2C17.0565259%2013.3676471%2C17.0565259%2013.3614429%2C17.0542282%20L9.12614876%2C15.9007353%20C9.10960465%2C15.8938418%209.09099265%2C15.8915441%209.07444853%2C15.8892465%20C9.05790441%2C15.8846506%209.03929241%2C15.8823529%209.02274829%2C15.8823529%20C9.00413629%2C15.8823529%208.98552376%2C15.8823529%208.96897965%2C15.8823529%20C8.93589141%2C15.8846506%208.90487159%2C15.8915441%208.87385124%2C15.9007353%20L4.63855712%2C17.0542282%20L2.57674659%2C17.6171876%20C2.57674659%2C17.61489%202.57674659%2C17.61489%202.57467818%2C17.6171876%20C2.50022965%2C17.6378676%202.43612159%2C17.6470588%202.38235294%2C17.6470588%20C1.93772965%2C17.6470588%201.58823529%2C17.2587318%201.58823529%2C16.7647059%20C1.58823529%2C16.6084559%201.62752771%2C16.4636947%201.69990835%2C16.3235294%20C1.79710465%2C16.1351106%201.79503676%2C15.9030329%201.68956788%2C15.7169118%20L1.83226129%2C15.9696694%20L3.69140612%2C10.9834559%20L3.60661765%2C11.0638788%20C3.68106618%2C10.9926471%203.73483482%2C10.9030329%203.76585465%2C10.80193%20C3.89200394%2C10.3906253%204.21047794%2C10.0873165%204.60546888%2C10.0183824%20C4.63855712%2C10.0137871%204.67164535%2C10.0045959%204.70473359%2C9.99080882%20C4.70473359%2C9.99080882%204.70680147%2C9.99080882%204.70680147%2C9.99080882%20C4.81020247%2C9.96783118%207.25459559%2C9.41176471%209%2C9.41176471%20Z%20M9%2C10%20C8.71254582%2C10%208.52642476%2C10.17693%208.40854806%2C10.3216912%20C8.29067082%2C10.4664524%208.21208653%2C10.6181065%208.137638%2C10.7835476%20C7.98874094%2C11.1167282%207.86879582%2C11.5050553%207.76539535%2C11.8910847%20C7.60408994%2C12.4885112%207.54411765%2C12.8400735%207.49862159%2C13.0721506%20L4.59719682%2C14.1475182%20C4.32008259%2C14.2509194%204.16911765%2C14.5840994%204.26217818%2C14.8920035%20C4.35523924%2C15.1999082%204.65510124%2C15.3676471%204.93221494%2C15.2642465%20L8.10868553%2C14.0877759%20C8.28860294%2C14.02114%208.42302376%2C13.8511029%208.46024829%2C13.6443018%20C8.46024829%2C13.6443018%208.59053335%2C12.9296876%208.77872229%2C12.2265624%20C8.84696718%2C11.9738053%208.92555147%2C11.7670035%209%2C11.5647976%20C9.07444853%2C11.7670035%209.15096494%2C11.9738053%209.22127771%2C12.2265624%20C9.40946718%2C12.9296876%209.53975171%2C13.6465994%209.53975171%2C13.6465994%20C9.57697624%2C13.8534006%209.71139706%2C14.02114%209.89131447%2C14.0877759%20L13.0677851%2C15.2642465%20C13.3448988%2C15.3676471%2013.6447613%2C15.1999082%2013.7378218%2C14.8920035%20C13.8308824%2C14.5840994%2013.6799174%2C14.2509194%2013.4028032%2C14.1475182%20L10.5013789%2C13.0721506%20C10.4558824%2C12.8400735%2010.3959101%2C12.4885112%2010.2346046%2C11.8910847%20C10.1312042%2C11.5050553%2010.0112591%2C11.1167282%209.86029412%2C10.7835476%20C9.78584559%2C10.6181065%209.70726129%2C10.4664524%209.58938406%2C10.3216912%20C9.47357524%2C10.1746324%209.28538629%2C10%209%2C10%20Z%20M9%2C17.0772059%20L12.7058824%2C18.0882353%20L12.7058824%2C18.1158088%20C12.7058824%2C18.4466912%2012.8237591%2C18.6236212%2012.9395679%2C18.8097429%20C13.0574451%2C18.9958641%2013.2022059%2C19.1727941%2013.3676471%2C19.3589153%20C13.6964615%2C19.7334559%2014.1142002%2C20.1309741%2014.5298716%2C20.5055147%20C15.3157172%2C21.2109376%2016.012638%2C21.7555147%2016.0953586%2C21.8198529%20C16.134651%2C21.8704047%2016.1822149%2C21.9140624%2016.2380515%2C21.9462318%20C16.6578586%2C22.1966912%2016.9411765%2C22.6723347%2016.9411765%2C23.2352941%20C16.9411765%2C24.0533088%2016.3538603%2C24.7058824%2015.6176471%2C24.7058824%20L6.61764706%2C24.7058824%20C6.17302376%2C24.7058824%205.82352941%2C24.3175553%205.82352941%2C23.8235294%20C5.82352941%2C23.3869488%206.10064365%2C23.0353859%206.46461424%2C22.9572612%20C6.46668212%2C22.9572612%206.46875%2C22.9572612%206.47081788%2C22.9572612%20L11.7545956%2C21.7532171%20C12.0275735%2C21.69807%2012.2178309%2C21.4131435%2012.1847426%2C21.1052388%20C12.1516544%2C20.7973347%2011.9076289%2C20.5698529%2011.6305147%2C20.5882353%20C11.5994944%2C20.5882353%2011.5705424%2C20.5928312%2011.5395221%2C20.5997241%20L6.26401641%2C21.8014706%20C5.40785859%2C21.9852941%204.76470588%2C22.8262871%204.76470588%2C23.8235294%20C4.76470588%2C24.1406253%204.83708653%2C24.4370406%204.95289535%2C24.7058824%20L2.38235294%2C24.7058824%20C1.64613971%2C24.7058824%201.05882353%2C24.0533088%201.05882353%2C23.2352941%20C1.05882353%2C22.67693%201.33800565%2C22.2058824%201.75160859%2C21.9531253%20C1.80124094%2C21.9232535%201.84466912%2C21.8864888%201.88396153%2C21.8405329%20C1.96668212%2C21.7784929%202.66773924%2C21.2522976%203.45772059%2C20.5606618%20C3.87545982%2C20.1930147%204.29526641%2C19.80239%204.63028506%2C19.4278494%20C4.79572624%2C19.2417282%204.94255541%2C19.0602024%205.06043212%2C18.8694853%20C5.17830882%2C18.6787682%205.29411765%2C18.4880518%205.29411765%2C18.1640624%20L5.29411765%2C18.0882353%20L9%2C17.0772059%20Z%22%20id%3D%22Shape%22%3E%3C/path%3E%0A%20%20%20%20%20%20%20%20%3C/g%3E%0A%20%20%20%20%3C/g%3E%0A%3C/svg%3E); }
+    .b-nav__link[data-slide=music]:before {
+      left: calc(50% + 0.3px);
+      width: 22px;
+      height: 19px;
+      background-image: url(data:image/svg+xml,%3C%3Fxml%20version%3D%221.0%22%20encoding%3D%22UTF-8%22%3F%3E%0A%3Csvg%20width%3D%2224px%22%20height%3D%2221px%22%20viewBox%3D%220%200%2024%2021%22%20version%3D%221.1%22%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20xmlns%3Axlink%3D%22http%3A//www.w3.org/1999/xlink%22%3E%0A%20%20%20%20%3C%21--%20Generator%3A%20Sketch%2044.1%20%2841455%29%20-%20http%3A//www.bohemiancoding.com/sketch%20--%3E%0A%20%20%20%20%3Ctitle%3Eicon-music%3C/title%3E%0A%20%20%20%20%3Cdesc%3ECreated%20with%20Sketch.%3C/desc%3E%0A%20%20%20%20%3Cdefs%3E%3C/defs%3E%0A%20%20%20%20%3Cg%20id%3D%22Page-1%22%20stroke%3D%22none%22%20stroke-width%3D%221%22%20fill%3D%22none%22%20fill-rule%3D%22evenodd%22%3E%0A%20%20%20%20%20%20%20%20%3Cg%20id%3D%22icon-music%22%20fill-rule%3D%22nonzero%22%20fill%3D%22%234C4C4C%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%3Cpath%20d%3D%22M0.39%2C0%20C0.16125024%2C0.04312512%20-0.00375%2C0.24562512%206.39489546e-16%2C0.48%20L6.39489546e-16%2C19.68%20C6.39489546e-16%2C19.9443749%200.21562512%2C20.16%200.48%2C20.16%20L23.52%2C20.16%20C23.7843749%2C20.16%2024%2C19.9443749%2024%2C19.68%20L24%2C0.48%20C24%2C0.21562512%2023.7843749%2C0%2023.52%2C0%20L0.48%2C0%20C0.465%2C0%200.45%2C0%200.435%2C0%20C0.42%2C0%200.405%2C0%200.39%2C0%20Z%20M0.96%2C0.96%20L23.04%2C0.96%20L23.04%2C10.08%20L0.96%2C10.08%20L0.96%2C0.96%20Z%20M2.88%2C2.88%20C2.62875024%2C2.88%202.37187488%2C2.96812512%202.19%2C3.15%20C2.00812512%2C3.33187488%201.92%2C3.58875024%201.92%2C3.84%20L1.92%2C7.68%20C1.92%2C7.93125024%202.00812512%2C8.18812512%202.19%2C8.37%20C2.37187488%2C8.55187488%202.62875024%2C8.64%202.88%2C8.64%20L11.52%2C8.64%20C11.7712502%2C8.64%2012.0281251%2C8.55187488%2012.21%2C8.37%20C12.3918749%2C8.18812512%2012.48%2C7.93125024%2012.48%2C7.68%20L12.48%2C3.84%20C12.48%2C3.58875024%2012.3918749%2C3.33187488%2012.21%2C3.15%20C12.0281251%2C2.96812512%2011.7712502%2C2.88%2011.52%2C2.88%20L2.88%2C2.88%20Z%20M2.88%2C3.84%20L11.52%2C3.84%20L11.52%2C7.68%20L2.88%2C7.68%20L2.88%2C3.84%20Z%20M15.36%2C3.84%20C14.3043749%2C3.84%2013.44%2C4.70437488%2013.44%2C5.76%20C13.44%2C6.81562512%2014.3043749%2C7.68%2015.36%2C7.68%20C16.4156251%2C7.68%2017.28%2C6.81562512%2017.28%2C5.76%20C17.28%2C4.70437488%2016.4156251%2C3.84%2015.36%2C3.84%20Z%20M20.16%2C3.84%20C19.1043749%2C3.84%2018.24%2C4.70437488%2018.24%2C5.76%20C18.24%2C6.81562512%2019.1043749%2C7.68%2020.16%2C7.68%20C21.2156251%2C7.68%2022.08%2C6.81562512%2022.08%2C5.76%20C22.08%2C4.70437488%2021.2156251%2C3.84%2020.16%2C3.84%20Z%20M3.84%2C4.32%20L3.84%2C7.2%20L4.8%2C7.2%20L4.8%2C4.32%20L3.84%2C4.32%20Z%20M9.6%2C4.32%20L9.6%2C7.2%20L10.56%2C7.2%20L10.56%2C4.32%20L9.6%2C4.32%20Z%20M6.72%2C4.8%20L6.72%2C7.2%20L7.68%2C7.2%20L7.68%2C4.8%20L6.72%2C4.8%20Z%20M15.36%2C4.8%20C15.8962502%2C4.8%2016.32%2C5.22375024%2016.32%2C5.76%20C16.32%2C6.29625024%2015.8962502%2C6.72%2015.36%2C6.72%20C14.8237502%2C6.72%2014.4%2C6.29625024%2014.4%2C5.76%20C14.4%2C5.22375024%2014.8237502%2C4.8%2015.36%2C4.8%20Z%20M20.16%2C4.8%20C20.6962502%2C4.8%2021.12%2C5.22375024%2021.12%2C5.76%20C21.12%2C6.29625024%2020.6962502%2C6.72%2020.16%2C6.72%20C19.6237502%2C6.72%2019.2%2C6.29625024%2019.2%2C5.76%20C19.2%2C5.22375024%2019.6237502%2C4.8%2020.16%2C4.8%20Z%20M8.16%2C5.28%20L8.16%2C7.2%20L9.12%2C7.2%20L9.12%2C5.28%20L8.16%2C5.28%20Z%20M5.28%2C6.24%20L5.28%2C7.2%20L6.24%2C7.2%20L6.24%2C6.24%20L5.28%2C6.24%20Z%20M0.96%2C11.04%20L4.335%2C11.04%20L4.47%2C16.95%20C4.51875024%2C17.1412502%204.65375024%2C17.28%204.845%2C17.28%20L5.715%2C17.28%20C5.90625024%2C17.28%206.045%2C17.1412502%206.045%2C16.95%20L6.225%2C11.04%20L7.215%2C11.04%20L7.35%2C16.95%20C7.39875024%2C17.1412502%207.53375024%2C17.28%207.725%2C17.28%20L8.595%2C17.28%20C8.78625024%2C17.28%208.925%2C17.1412502%208.925%2C16.95%20L9.105%2C11.04%20L10.095%2C11.04%20L10.23%2C16.95%20C10.2787502%2C17.1412502%2010.4137502%2C17.28%2010.605%2C17.28%20L11.475%2C17.28%20C11.6662502%2C17.28%2011.805%2C17.1412502%2011.805%2C16.95%20L11.985%2C11.04%20L14.895%2C11.04%20L15.03%2C16.95%20C15.0787502%2C17.1412502%2015.2137502%2C17.28%2015.405%2C17.28%20L16.275%2C17.28%20C16.4662502%2C17.28%2016.605%2C17.1412502%2016.605%2C16.95%20L16.785%2C11.04%20L17.775%2C11.04%20L17.91%2C16.95%20C17.9587502%2C17.1412502%2018.0937502%2C17.28%2018.285%2C17.28%20L19.155%2C17.28%20C19.3462502%2C17.28%2019.485%2C17.1412502%2019.485%2C16.95%20L19.665%2C11.04%20L23.04%2C11.04%20L23.04%2C19.2%20L0.96%2C19.2%20L0.96%2C11.04%20Z%22%20id%3D%22Shape%22%3E%3C/path%3E%0A%20%20%20%20%20%20%20%20%3C/g%3E%0A%20%20%20%20%3C/g%3E%0A%3C/svg%3E); }
+    .b-nav__link_active, .b-nav__link:hover {
+      border: 1px #8c8c8c solid;
+      transition: all 0.3s ease; }
+    .b-nav__link:hover {
+      transform: scale(0.95); }
+    .b-nav__link_active:hover {
+      transform: scale(1); }
+
+.b-video {
+  display: block;
+  opacity: 0.04;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  z-index: -1;
+  transform: translate(-50%, -50%); }
+
+@font-face {
+  font-family: 'icomoon';
+  font-weight: normal;
+  font-style: normal; }
+
+.dl-menuwrapper {
+  width: 300px;
+  position: relative;
+  -webkit-perspective: 1000px;
+  -moz-perspective: 1000px;
+  perspective: 1000px;
+  -webkit-perspective-origin: 50% 200%;
+  -moz-perspective-origin: 50% 200%;
+  perspective-origin: 50% 200%; }
+
+.dl-menuwrapper:first-child {
+  margin-right: 100px; }
+
+.dl-menuwrapper button {
+  display: block;
+  width: 100%;
+  margin: 0;
+  border: none;
+  overflow: hidden;
+  position: relative;
+  cursor: pointer;
+  outline: none; }
+
+.dl-menuwrapper ul {
+  padding: 0;
+  list-style: none;
+  -webkit-transform-style: preserve-3d;
+  -moz-transform-style: preserve-3d;
+  transform-style: preserve-3d; }
+
+.dl-menuwrapper li {
+  position: relative; }
+
+.dl-menuwrapper li a {
+  display: block;
+  position: relative;
+  padding: 7px 10px;
+  font-size: 13px;
+  line-height: 20px;
+  font-weight: 700;
+  outline: none;
+  text-transform: uppercase;
+  letter-spacing: 1px; }
+
+.dl-menuwrapper button,
+.dl-menuwrapper li a {
+  background: #fff;
+  color: #aaa; }
+
+.no-touch .dl-menuwrapper li a:hover {
+  background: #f8f8f8; }
+
+.dl-menuwrapper li.dl-back > a {
+  padding-left: 30px;
+  background: #f2f2f2; }
+
+.dl-menuwrapper li.dl-back:after,
+.dl-menuwrapper li > a:not(:only-child):after,
+.dl-menuwrapper button:after {
+  position: absolute;
+  top: 0;
+  line-height: 33px;
+  color: #ddd;
+  font-family: 'icomoon';
+  speak: none;
+  -webkit-font-smoothing: antialiased;
+  content: "\e000"; }
+
+.dl-menuwrapper button:after {
+  line-height: 50px;
+  right: 15px;
+  -webkit-transform: rotate(90deg);
+  -moz-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  transform: rotate(90deg); }
+
+.dl-menuwrapper li.dl-back:after {
+  left: 10px;
+  -webkit-transform: rotate(180deg);
+  -moz-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  transform: rotate(180deg); }
+
+.dl-menuwrapper li > a:after {
+  right: 10px;
+  color: rgba(0, 0, 0, 0.15); }
+
+.dl-menuwrapper .dl-menu {
+  margin: 5px 0 0 0;
+  position: absolute;
+  width: 100%;
+  opacity: 0;
+  pointer-events: none;
+  box-shadow: 0 3px 0 rgba(0, 0, 0, 0.1);
+  -webkit-transform: translateY(10px);
+  -moz-transform: translateY(10px);
+  transform: translateY(10px);
+  -webkit-backface-visibility: hidden;
+  -moz-backface-visibility: hidden;
+  backface-visibility: hidden; }
+
+.dl-menuwrapper .dl-menu.dl-menu-toggle {
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  transition: all 0.3s ease; }
+
+.dl-menuwrapper .dl-menu.dl-menuopen {
+  opacity: 1;
+  pointer-events: auto;
+  -webkit-transform: translateY(0px);
+  -moz-transform: translateY(0px);
+  transform: translateY(0px); }
+
+/* Hide the inner submenus */
+.dl-menuwrapper li .dl-submenu {
+  display: none; }
+
+.dl-menu.dl-subview li,
+.dl-menu.dl-subview li.dl-subviewopen > a,
+.dl-menu.dl-subview li.dl-subview > a {
+  display: none; }
+
+.dl-menu.dl-subview li.dl-subview,
+.dl-menu.dl-subview li.dl-subview .dl-submenu,
+.dl-menu.dl-subview li.dl-subviewopen,
+.dl-menu.dl-subview li.dl-subviewopen > .dl-submenu,
+.dl-menu.dl-subview li.dl-subviewopen > .dl-submenu > li {
+  display: block; }
+
+/* Dynamically added submenu outside of the menu context */
+.dl-menuwrapper > .dl-submenu {
+  position: absolute;
+  width: 100%;
+  top: 55px;
+  left: 0;
+  margin: 0; }
+
+/* Animation classes for moving out and in */
+.dl-menu.dl-animate-out-1 {
+  -webkit-animation: MenuAnimOut1 0.4s linear forwards;
+  -moz-animation: MenuAnimOut1 0.4s linear forwards;
+  animation: MenuAnimOut1 0.4s linear forwards; }
+
+.dl-menu.dl-animate-out-2 {
+  -webkit-animation: MenuAnimOut2 0.3s ease-in-out forwards;
+  -moz-animation: MenuAnimOut2 0.3s ease-in-out forwards;
+  animation: MenuAnimOut2 0.3s ease-in-out forwards; }
+
+.dl-menu.dl-animate-out-3 {
+  -webkit-animation: MenuAnimOut3 0.4s ease forwards;
+  -moz-animation: MenuAnimOut3 0.4s ease forwards;
+  animation: MenuAnimOut3 0.4s ease forwards; }
+
+.dl-menu.dl-animate-out-4 {
+  -webkit-animation: MenuAnimOut4 0.4s ease forwards;
+  -moz-animation: MenuAnimOut4 0.4s ease forwards;
+  animation: MenuAnimOut4 0.4s ease forwards; }
+
+.dl-menu.dl-animate-out-5 {
+  -webkit-animation: MenuAnimOut5 0.4s ease forwards;
+  -moz-animation: MenuAnimOut5 0.4s ease forwards;
+  animation: MenuAnimOut5 0.4s ease forwards; }
+
+@-webkit-keyframes MenuAnimOut1 {
+  50% {
+    -webkit-transform: translateZ(-250px) rotateY(30deg); }
+  75% {
+    -webkit-transform: translateZ(-372.5px) rotateY(15deg);
+    opacity: .5; }
+  100% {
+    -webkit-transform: translateZ(-500px) rotateY(0deg);
+    opacity: 0; } }
+
+@-webkit-keyframes MenuAnimOut2 {
+  100% {
+    -webkit-transform: translateX(-100%);
+    opacity: 0; } }
+
+@-webkit-keyframes MenuAnimOut3 {
+  100% {
+    -webkit-transform: translateZ(300px);
+    opacity: 0; } }
+
+@-webkit-keyframes MenuAnimOut4 {
+  100% {
+    -webkit-transform: translateZ(-300px);
+    opacity: 0; } }
+
+@-webkit-keyframes MenuAnimOut5 {
+  100% {
+    -webkit-transform: translateY(40%);
+    opacity: 0; } }
+
+@-moz-keyframes MenuAnimOut1 {
+  50% {
+    -moz-transform: translateZ(-250px) rotateY(30deg); }
+  75% {
+    -moz-transform: translateZ(-372.5px) rotateY(15deg);
+    opacity: .5; }
+  100% {
+    -moz-transform: translateZ(-500px) rotateY(0deg);
+    opacity: 0; } }
+
+@-moz-keyframes MenuAnimOut2 {
+  100% {
+    -moz-transform: translateX(-100%);
+    opacity: 0; } }
+
+@-moz-keyframes MenuAnimOut3 {
+  100% {
+    -moz-transform: translateZ(300px);
+    opacity: 0; } }
+
+@-moz-keyframes MenuAnimOut4 {
+  100% {
+    -moz-transform: translateZ(-300px);
+    opacity: 0; } }
+
+@-moz-keyframes MenuAnimOut5 {
+  100% {
+    -moz-transform: translateY(40%);
+    opacity: 0; } }
+
+@keyframes MenuAnimOut1 {
+  50% {
+    transform: translateZ(-250px) rotateY(30deg); }
+  75% {
+    transform: translateZ(-372.5px) rotateY(15deg);
+    opacity: .5; }
+  100% {
+    transform: translateZ(-500px) rotateY(0deg);
+    opacity: 0; } }
+
+@keyframes MenuAnimOut2 {
+  100% {
+    transform: translateX(-100%);
+    opacity: 0; } }
+
+@keyframes MenuAnimOut3 {
+  100% {
+    transform: translateZ(300px);
+    opacity: 0; } }
+
+@keyframes MenuAnimOut4 {
+  100% {
+    transform: translateZ(-300px);
+    opacity: 0; } }
+
+@keyframes MenuAnimOut5 {
+  100% {
+    transform: translateY(40%);
+    opacity: 0; } }
+
+.dl-menu.dl-animate-in-1 {
+  -webkit-animation: MenuAnimIn1 0.3s linear forwards;
+  -moz-animation: MenuAnimIn1 0.3s linear forwards;
+  animation: MenuAnimIn1 0.3s linear forwards; }
+
+.dl-menu.dl-animate-in-2 {
+  -webkit-animation: MenuAnimIn2 0.3s ease-in-out forwards;
+  -moz-animation: MenuAnimIn2 0.3s ease-in-out forwards;
+  animation: MenuAnimIn2 0.3s ease-in-out forwards; }
+
+.dl-menu.dl-animate-in-3 {
+  -webkit-animation: MenuAnimIn3 0.4s ease forwards;
+  -moz-animation: MenuAnimIn3 0.4s ease forwards;
+  animation: MenuAnimIn3 0.4s ease forwards; }
+
+.dl-menu.dl-animate-in-4 {
+  -webkit-animation: MenuAnimIn4 0.4s ease forwards;
+  -moz-animation: MenuAnimIn4 0.4s ease forwards;
+  animation: MenuAnimIn4 0.4s ease forwards; }
+
+.dl-menu.dl-animate-in-5 {
+  -webkit-animation: MenuAnimIn5 0.4s ease forwards;
+  -moz-animation: MenuAnimIn5 0.4s ease forwards;
+  animation: MenuAnimIn5 0.4s ease forwards; }
+
+@-webkit-keyframes MenuAnimIn1 {
+  0% {
+    -webkit-transform: translateZ(-500px) rotateY(0deg);
+    opacity: 0; }
+  20% {
+    -webkit-transform: translateZ(-250px) rotateY(30deg);
+    opacity: 0.5; }
+  100% {
+    -webkit-transform: translateZ(0px) rotateY(0deg);
+    opacity: 1; } }
+
+@-webkit-keyframes MenuAnimIn2 {
+  0% {
+    -webkit-transform: translateX(-100%);
+    opacity: 0; }
+  100% {
+    -webkit-transform: translateX(0px);
+    opacity: 1; } }
+
+@-webkit-keyframes MenuAnimIn3 {
+  0% {
+    -webkit-transform: translateZ(300px);
+    opacity: 0; }
+  100% {
+    -webkit-transform: translateZ(0px);
+    opacity: 1; } }
+
+@-webkit-keyframes MenuAnimIn4 {
+  0% {
+    -webkit-transform: translateZ(-300px);
+    opacity: 0; }
+  100% {
+    -webkit-transform: translateZ(0px);
+    opacity: 1; } }
+
+@-webkit-keyframes MenuAnimIn5 {
+  0% {
+    -webkit-transform: translateY(40%);
+    opacity: 0; }
+  100% {
+    -webkit-transform: translateY(0);
+    opacity: 1; } }
+
+@-moz-keyframes MenuAnimIn1 {
+  0% {
+    -moz-transform: translateZ(-500px) rotateY(0deg);
+    opacity: 0; }
+  20% {
+    -moz-transform: translateZ(-250px) rotateY(30deg);
+    opacity: 0.5; }
+  100% {
+    -moz-transform: translateZ(0px) rotateY(0deg);
+    opacity: 1; } }
+
+@-moz-keyframes MenuAnimIn2 {
+  0% {
+    -moz-transform: translateX(-100%);
+    opacity: 0; }
+  100% {
+    -moz-transform: translateX(0px);
+    opacity: 1; } }
+
+@-moz-keyframes MenuAnimIn3 {
+  0% {
+    -moz-transform: translateZ(300px);
+    opacity: 0; }
+  100% {
+    -moz-transform: translateZ(0px);
+    opacity: 1; } }
+
+@-moz-keyframes MenuAnimIn4 {
+  0% {
+    -moz-transform: translateZ(-300px);
+    opacity: 0; }
+  100% {
+    -moz-transform: translateZ(0px);
+    opacity: 1; } }
+
+@-moz-keyframes MenuAnimIn5 {
+  0% {
+    -moz-transform: translateY(40%);
+    opacity: 0; }
+  100% {
+    -moz-transform: translateY(0);
+    opacity: 1; } }
+
+@keyframes MenuAnimIn1 {
+  0% {
+    transform: translateZ(-500px) rotateY(0deg);
+    opacity: 0; }
+  20% {
+    transform: translateZ(-250px) rotateY(30deg);
+    opacity: 0.5; }
+  100% {
+    transform: translateZ(0px) rotateY(0deg);
+    opacity: 1; } }
+
+@keyframes MenuAnimIn2 {
+  0% {
+    transform: translateX(-100%);
+    opacity: 0; }
+  100% {
+    transform: translateX(0px);
+    opacity: 1; } }
+
+@keyframes MenuAnimIn3 {
+  0% {
+    transform: translateZ(300px);
+    opacity: 0; }
+  100% {
+    transform: translateZ(0px);
+    opacity: 1; } }
+
+@keyframes MenuAnimIn4 {
+  0% {
+    transform: translateZ(-300px);
+    opacity: 0; }
+  100% {
+    transform: translateZ(0px);
+    opacity: 1; } }
+
+@keyframes MenuAnimIn5 {
+  0% {
+    transform: translateY(40%);
+    opacity: 0; }
+  100% {
+    transform: translateY(0);
+    opacity: 1; } }
+
+.dl-menuwrapper > .dl-submenu.dl-animate-in-1 {
+  -webkit-animation: SubMenuAnimIn1 0.4s ease forwards;
+  -moz-animation: SubMenuAnimIn1 0.4s ease forwards;
+  animation: SubMenuAnimIn1 0.4s ease forwards; }
+
+.dl-menuwrapper > .dl-submenu.dl-animate-in-2 {
+  -webkit-animation: SubMenuAnimIn2 0.3s ease-in-out forwards;
+  -moz-animation: SubMenuAnimIn2 0.3s ease-in-out forwards;
+  animation: SubMenuAnimIn2 0.3s ease-in-out forwards; }
+
+.dl-menuwrapper > .dl-submenu.dl-animate-in-3 {
+  -webkit-animation: SubMenuAnimIn3 0.4s ease forwards;
+  -moz-animation: SubMenuAnimIn3 0.4s ease forwards;
+  animation: SubMenuAnimIn3 0.4s ease forwards; }
+
+.dl-menuwrapper > .dl-submenu.dl-animate-in-4 {
+  -webkit-animation: SubMenuAnimIn4 0.4s ease forwards;
+  -moz-animation: SubMenuAnimIn4 0.4s ease forwards;
+  animation: SubMenuAnimIn4 0.4s ease forwards; }
+
+.dl-menuwrapper > .dl-submenu.dl-animate-in-5 {
+  -webkit-animation: SubMenuAnimIn5 0.4s ease forwards;
+  -moz-animation: SubMenuAnimIn5 0.4s ease forwards;
+  animation: SubMenuAnimIn5 0.4s ease forwards; }
+
+@-webkit-keyframes SubMenuAnimIn1 {
+  0% {
+    -webkit-transform: translateX(50%);
+    opacity: 0; }
+  100% {
+    -webkit-transform: translateX(0px);
+    opacity: 1; } }
+
+@-webkit-keyframes SubMenuAnimIn2 {
+  0% {
+    -webkit-transform: translateX(100%);
+    opacity: 0; }
+  100% {
+    -webkit-transform: translateX(0px);
+    opacity: 1; } }
+
+@-webkit-keyframes SubMenuAnimIn3 {
+  0% {
+    -webkit-transform: translateZ(-300px);
+    opacity: 0; }
+  100% {
+    -webkit-transform: translateZ(0px);
+    opacity: 1; } }
+
+@-webkit-keyframes SubMenuAnimIn4 {
+  0% {
+    -webkit-transform: translateZ(300px);
+    opacity: 0; }
+  100% {
+    -webkit-transform: translateZ(0px);
+    opacity: 1; } }
+
+@-webkit-keyframes SubMenuAnimIn5 {
+  0% {
+    -webkit-transform: translateZ(-200px);
+    opacity: 0; }
+  100% {
+    -webkit-transform: translateZ(0);
+    opacity: 1; } }
+
+@-moz-keyframes SubMenuAnimIn1 {
+  0% {
+    -moz-transform: translateX(50%);
+    opacity: 0; }
+  100% {
+    -moz-transform: translateX(0px);
+    opacity: 1; } }
+
+@-moz-keyframes SubMenuAnimIn2 {
+  0% {
+    -moz-transform: translateX(100%);
+    opacity: 0; }
+  100% {
+    -moz-transform: translateX(0px);
+    opacity: 1; } }
+
+@-moz-keyframes SubMenuAnimIn3 {
+  0% {
+    -moz-transform: translateZ(-300px);
+    opacity: 0; }
+  100% {
+    -moz-transform: translateZ(0px);
+    opacity: 1; } }
+
+@-moz-keyframes SubMenuAnimIn4 {
+  0% {
+    -moz-transform: translateZ(300px);
+    opacity: 0; }
+  100% {
+    -moz-transform: translateZ(0px);
+    opacity: 1; } }
+
+@-moz-keyframes SubMenuAnimIn5 {
+  0% {
+    -moz-transform: translateZ(-200px);
+    opacity: 0; }
+  100% {
+    -moz-transform: translateZ(0);
+    opacity: 1; } }
+
+@keyframes SubMenuAnimIn1 {
+  0% {
+    transform: translateX(50%);
+    opacity: 0; }
+  100% {
+    transform: translateX(0px);
+    opacity: 1; } }
+
+@keyframes SubMenuAnimIn2 {
+  0% {
+    transform: translateX(100%);
+    opacity: 0; }
+  100% {
+    transform: translateX(0px);
+    opacity: 1; } }
+
+@keyframes SubMenuAnimIn3 {
+  0% {
+    transform: translateZ(-300px);
+    opacity: 0; }
+  100% {
+    transform: translateZ(0px);
+    opacity: 1; } }
+
+@keyframes SubMenuAnimIn4 {
+  0% {
+    transform: translateZ(300px);
+    opacity: 0; }
+  100% {
+    transform: translateZ(0px);
+    opacity: 1; } }
+
+@keyframes SubMenuAnimIn5 {
+  0% {
+    transform: translateZ(-200px);
+    opacity: 0; }
+  100% {
+    transform: translateZ(0);
+    opacity: 1; } }
+
+.dl-menuwrapper > .dl-submenu.dl-animate-out-1 {
+  -webkit-animation: SubMenuAnimOut1 0.4s ease forwards;
+  -moz-animation: SubMenuAnimOut1 0.4s ease forwards;
+  animation: SubMenuAnimOut1 0.4s ease forwards; }
+
+.dl-menuwrapper > .dl-submenu.dl-animate-out-2 {
+  -webkit-animation: SubMenuAnimOut2 0.3s ease-in-out forwards;
+  -moz-animation: SubMenuAnimOut2 0.3s ease-in-out forwards;
+  animation: SubMenuAnimOut2 0.3s ease-in-out forwards; }
+
+.dl-menuwrapper > .dl-submenu.dl-animate-out-3 {
+  -webkit-animation: SubMenuAnimOut3 0.4s ease forwards;
+  -moz-animation: SubMenuAnimOut3 0.4s ease forwards;
+  animation: SubMenuAnimOut3 0.4s ease forwards; }
+
+.dl-menuwrapper > .dl-submenu.dl-animate-out-4 {
+  -webkit-animation: SubMenuAnimOut4 0.4s ease forwards;
+  -moz-animation: SubMenuAnimOut4 0.4s ease forwards;
+  animation: SubMenuAnimOut4 0.4s ease forwards; }
+
+.dl-menuwrapper > .dl-submenu.dl-animate-out-5 {
+  -webkit-animation: SubMenuAnimOut5 0.4s ease forwards;
+  -moz-animation: SubMenuAnimOut5 0.4s ease forwards;
+  animation: SubMenuAnimOut5 0.4s ease forwards; }
+
+@-webkit-keyframes SubMenuAnimOut1 {
+  0% {
+    -webkit-transform: translateX(0%);
+    opacity: 1; }
+  100% {
+    -webkit-transform: translateX(50%);
+    opacity: 0; } }
+
+@-webkit-keyframes SubMenuAnimOut2 {
+  0% {
+    -webkit-transform: translateX(0%);
+    opacity: 1; }
+  100% {
+    -webkit-transform: translateX(100%);
+    opacity: 0; } }
+
+@-webkit-keyframes SubMenuAnimOut3 {
+  0% {
+    -webkit-transform: translateZ(0px);
+    opacity: 1; }
+  100% {
+    -webkit-transform: translateZ(-300px);
+    opacity: 0; } }
+
+@-webkit-keyframes SubMenuAnimOut4 {
+  0% {
+    -webkit-transform: translateZ(0px);
+    opacity: 1; }
+  100% {
+    -webkit-transform: translateZ(300px);
+    opacity: 0; } }
+
+@-webkit-keyframes SubMenuAnimOut5 {
+  0% {
+    -webkit-transform: translateZ(0);
+    opacity: 1; }
+  100% {
+    -webkit-transform: translateZ(-200px);
+    opacity: 0; } }
+
+@-moz-keyframes SubMenuAnimOut1 {
+  0% {
+    -moz-transform: translateX(0%);
+    opacity: 1; }
+  100% {
+    -moz-transform: translateX(50%);
+    opacity: 0; } }
+
+@-moz-keyframes SubMenuAnimOut2 {
+  0% {
+    -moz-transform: translateX(0%);
+    opacity: 1; }
+  100% {
+    -moz-transform: translateX(100%);
+    opacity: 0; } }
+
+@-moz-keyframes SubMenuAnimOut3 {
+  0% {
+    -moz-transform: translateZ(0px);
+    opacity: 1; }
+  100% {
+    -moz-transform: translateZ(-300px);
+    opacity: 0; } }
+
+@-moz-keyframes SubMenuAnimOut4 {
+  0% {
+    -moz-transform: translateZ(0px);
+    opacity: 1; }
+  100% {
+    -moz-transform: translateZ(300px);
+    opacity: 0; } }
+
+@-moz-keyframes SubMenuAnimOut5 {
+  0% {
+    -moz-transform: translateZ(0);
+    opacity: 1; }
+  100% {
+    -moz-transform: translateZ(-200px);
+    opacity: 0; } }
+
+@keyframes SubMenuAnimOut1 {
+  0% {
+    transform: translateX(0%);
+    opacity: 1; }
+  100% {
+    transform: translateX(50%);
+    opacity: 0; } }
+
+@keyframes SubMenuAnimOut2 {
+  0% {
+    transform: translateX(0%);
+    opacity: 1; }
+  100% {
+    transform: translateX(100%);
+    opacity: 0; } }
+
+@keyframes SubMenuAnimOut3 {
+  0% {
+    transform: translateZ(0px);
+    opacity: 1; }
+  100% {
+    transform: translateZ(-300px);
+    opacity: 0; } }
+
+@keyframes SubMenuAnimOut4 {
+  0% {
+    transform: translateZ(0px);
+    opacity: 1; }
+  100% {
+    transform: translateZ(300px);
+    opacity: 0; } }
+
+@keyframes SubMenuAnimOut5 {
+  0% {
+    transform: translateZ(0);
+    opacity: 1; }
+  100% {
+    transform: translateZ(-200px);
+    opacity: 0; } }
+
+/* No JS Fallback */
+.no-js .dl-menuwrapper .dl-menu {
+  position: relative;
+  opacity: 1;
+  -webkit-transform: none;
+  -moz-transform: none;
+  transform: none; }
+
+.no-js .dl-menuwrapper li .dl-submenu {
+  display: block; }
+
+.no-js .dl-menuwrapper li.dl-back {
+  display: none; }
+
+.no-js .dl-menuwrapper li > a:not(:only-child) {
+  background: rgba(0, 0, 0, 0.1); }
+
+.no-js .dl-menuwrapper li > a:not(:only-child):after {
+  content: ''; }
+
+html, body {
+  height: 100%; }
+
+.pt-perspective {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  -webkit-perspective: 1200px;
+  -moz-perspective: 1200px;
+  perspective: 1200px; }
+
+.pt-page {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  visibility: hidden;
+  overflow: hidden;
+  -webkit-backface-visibility: hidden;
+  -moz-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -webkit-transform: translate3d(0, 0, 0);
+  -moz-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+  -webkit-transform-style: preserve-3d;
+  -moz-transform-style: preserve-3d;
+  transform-style: preserve-3d; }
+
+.pt-page-current,
+.no-js .pt-page {
+  visibility: visible;
+  z-index: 1;
+  height: 100vh; }
+
+.no-js body {
+  overflow: auto; }
+
+.pt-page-ontop {
+  z-index: 999; }
+
+/* animation sets */
+/* move from / to  */
+.pt-page-moveToLeft {
+  -webkit-animation: moveToLeft .6s ease both;
+  animation: moveToLeft .6s ease both; }
+
+.pt-page-moveFromLeft {
+  -webkit-animation: moveFromLeft .6s ease both;
+  animation: moveFromLeft .6s ease both; }
+
+.pt-page-moveToRight {
+  -webkit-animation: moveToRight .6s ease both;
+  animation: moveToRight .6s ease both; }
+
+.pt-page-moveFromRight {
+  -webkit-animation: moveFromRight .6s ease both;
+  animation: moveFromRight .6s ease both; }
+
+.pt-page-moveToTop {
+  -webkit-animation: moveToTop .6s ease both;
+  animation: moveToTop .6s ease both; }
+
+.pt-page-moveFromTop {
+  -webkit-animation: moveFromTop .6s ease both;
+  animation: moveFromTop .6s ease both; }
+
+.pt-page-moveToBottom {
+  -webkit-animation: moveToBottom .6s ease both;
+  animation: moveToBottom .6s ease both; }
+
+.pt-page-moveFromBottom {
+  -webkit-animation: moveFromBottom .6s ease both;
+  animation: moveFromBottom .6s ease both; }
+
+/* fade */
+.pt-page-fade {
+  -webkit-animation: fade .7s ease both;
+  animation: fade .7s ease both; }
+
+/* move from / to and fade */
+.pt-page-moveToLeftFade {
+  -webkit-animation: moveToLeftFade .7s ease both;
+  animation: moveToLeftFade .7s ease both; }
+
+.pt-page-moveFromLeftFade {
+  -webkit-animation: moveFromLeftFade .7s ease both;
+  animation: moveFromLeftFade .7s ease both; }
+
+.pt-page-moveToRightFade {
+  -webkit-animation: moveToRightFade .7s ease both;
+  animation: moveToRightFade .7s ease both; }
+
+.pt-page-moveFromRightFade {
+  -webkit-animation: moveFromRightFade .7s ease both;
+  animation: moveFromRightFade .7s ease both; }
+
+.pt-page-moveToTopFade {
+  -webkit-animation: moveToTopFade .7s ease both;
+  animation: moveToTopFade .7s ease both; }
+
+.pt-page-moveFromTopFade {
+  -webkit-animation: moveFromTopFade .7s ease both;
+  animation: moveFromTopFade .7s ease both; }
+
+.pt-page-moveToBottomFade {
+  -webkit-animation: moveToBottomFade .7s ease both;
+  animation: moveToBottomFade .7s ease both; }
+
+.pt-page-moveFromBottomFade {
+  -webkit-animation: moveFromBottomFade .7s ease both;
+  animation: moveFromBottomFade .7s ease both; }
+
+/* move to with different easing */
+.pt-page-moveToLeftEasing {
+  -webkit-animation: moveToLeft .7s ease-in-out both;
+  animation: moveToLeft .7s ease-in-out both; }
+
+.pt-page-moveToRightEasing {
+  -webkit-animation: moveToRight .7s ease-in-out both;
+  animation: moveToRight .7s ease-in-out both; }
+
+.pt-page-moveToTopEasing {
+  -webkit-animation: moveToTop .7s ease-in-out both;
+  animation: moveToTop .7s ease-in-out both; }
+
+.pt-page-moveToBottomEasing {
+  -webkit-animation: moveToBottom .7s ease-in-out both;
+  animation: moveToBottom .7s ease-in-out both; }
+
+/********************************* keyframes **************************************/
+/* move from / to  */
+@-webkit-keyframes moveToLeft {
+  from { }
+  to {
+    -webkit-transform: translateX(-100%); } }
+
+@keyframes moveToLeft {
+  from { }
+  to {
+    -webkit-transform: translateX(-100%);
+    transform: translateX(-100%); } }
+
+@-webkit-keyframes moveFromLeft {
+  from {
+    -webkit-transform: translateX(-100%); } }
+
+@keyframes moveFromLeft {
+  from {
+    -webkit-transform: translateX(-100%);
+    transform: translateX(-100%); } }
+
+@-webkit-keyframes moveToRight {
+  from { }
+  to {
+    -webkit-transform: translateX(100%); } }
+
+@keyframes moveToRight {
+  from { }
+  to {
+    -webkit-transform: translateX(100%);
+    transform: translateX(100%); } }
+
+@-webkit-keyframes moveFromRight {
+  from {
+    -webkit-transform: translateX(100%); } }
+
+@keyframes moveFromRight {
+  from {
+    -webkit-transform: translateX(100%);
+    transform: translateX(100%); } }
+
+@-webkit-keyframes moveToTop {
+  from { }
+  to {
+    -webkit-transform: translateY(-100%); } }
+
+@keyframes moveToTop {
+  from { }
+  to {
+    -webkit-transform: translateY(-100%);
+    transform: translateY(-100%); } }
+
+@-webkit-keyframes moveFromTop {
+  from {
+    -webkit-transform: translateY(-100%); } }
+
+@keyframes moveFromTop {
+  from {
+    -webkit-transform: translateY(-100%);
+    transform: translateY(-100%); } }
+
+@-webkit-keyframes moveToBottom {
+  from { }
+  to {
+    -webkit-transform: translateY(100%); } }
+
+@keyframes moveToBottom {
+  from { }
+  to {
+    -webkit-transform: translateY(100%);
+    transform: translateY(100%); } }
+
+@-webkit-keyframes moveFromBottom {
+  from {
+    -webkit-transform: translateY(100%); } }
+
+@keyframes moveFromBottom {
+  from {
+    -webkit-transform: translateY(100%);
+    transform: translateY(100%); } }
+
+/* fade */
+@-webkit-keyframes fade {
+  from { }
+  to {
+    opacity: 0.3; } }
+
+@keyframes fade {
+  from { }
+  to {
+    opacity: 0.3; } }
+
+/* move from / to and fade */
+@-webkit-keyframes moveToLeftFade {
+  from { }
+  to {
+    opacity: 0.3;
+    -webkit-transform: translateX(-100%); } }
+
+@keyframes moveToLeftFade {
+  from { }
+  to {
+    opacity: 0.3;
+    -webkit-transform: translateX(-100%);
+    transform: translateX(-100%); } }
+
+@-webkit-keyframes moveFromLeftFade {
+  from {
+    opacity: 0.3;
+    -webkit-transform: translateX(-100%); } }
+
+@keyframes moveFromLeftFade {
+  from {
+    opacity: 0.3;
+    -webkit-transform: translateX(-100%);
+    transform: translateX(-100%); } }
+
+@-webkit-keyframes moveToRightFade {
+  from { }
+  to {
+    opacity: 0.3;
+    -webkit-transform: translateX(100%); } }
+
+@keyframes moveToRightFade {
+  from { }
+  to {
+    opacity: 0.3;
+    -webkit-transform: translateX(100%);
+    transform: translateX(100%); } }
+
+@-webkit-keyframes moveFromRightFade {
+  from {
+    opacity: 0.3;
+    -webkit-transform: translateX(100%); } }
+
+@keyframes moveFromRightFade {
+  from {
+    opacity: 0.3;
+    -webkit-transform: translateX(100%);
+    transform: translateX(100%); } }
+
+@-webkit-keyframes moveToTopFade {
+  from { }
+  to {
+    opacity: 0.3;
+    -webkit-transform: translateY(-100%); } }
+
+@keyframes moveToTopFade {
+  from { }
+  to {
+    opacity: 0.3;
+    -webkit-transform: translateY(-100%);
+    transform: translateY(-100%); } }
+
+@-webkit-keyframes moveFromTopFade {
+  from {
+    opacity: 0.3;
+    -webkit-transform: translateY(-100%); } }
+
+@keyframes moveFromTopFade {
+  from {
+    opacity: 0.3;
+    -webkit-transform: translateY(-100%);
+    transform: translateY(-100%); } }
+
+@-webkit-keyframes moveToBottomFade {
+  from { }
+  to {
+    opacity: 0.3;
+    -webkit-transform: translateY(100%); } }
+
+@keyframes moveToBottomFade {
+  from { }
+  to {
+    opacity: 0.3;
+    -webkit-transform: translateY(100%);
+    transform: translateY(100%); } }
+
+@-webkit-keyframes moveFromBottomFade {
+  from {
+    opacity: 0.3;
+    -webkit-transform: translateY(100%); } }
+
+@keyframes moveFromBottomFade {
+  from {
+    opacity: 0.3;
+    -webkit-transform: translateY(100%);
+    transform: translateY(100%); } }
+
+/* scale and fade */
+.pt-page-scaleDown {
+  -webkit-animation: scaleDown .7s ease both;
+  animation: scaleDown .7s ease both; }
+
+.pt-page-scaleUp {
+  -webkit-animation: scaleUp .7s ease both;
+  animation: scaleUp .7s ease both; }
+
+.pt-page-scaleUpDown {
+  -webkit-animation: scaleUpDown .5s ease both;
+  animation: scaleUpDown .5s ease both; }
+
+.pt-page-scaleDownUp {
+  -webkit-animation: scaleDownUp .5s ease both;
+  animation: scaleDownUp .5s ease both; }
+
+.pt-page-scaleDownCenter {
+  -webkit-animation: scaleDownCenter .4s ease-in both;
+  animation: scaleDownCenter .4s ease-in both; }
+
+.pt-page-scaleUpCenter {
+  -webkit-animation: scaleUpCenter .4s ease-out both;
+  animation: scaleUpCenter .4s ease-out both; }
+
+/********************************* keyframes **************************************/
+/* scale and fade */
+@-webkit-keyframes scaleDown {
+  from { }
+  to {
+    opacity: 0;
+    -webkit-transform: scale(0.8); } }
+
+@keyframes scaleDown {
+  from { }
+  to {
+    opacity: 0;
+    -webkit-transform: scale(0.8);
+    transform: scale(0.8); } }
+
+@-webkit-keyframes scaleUp {
+  from {
+    opacity: 0;
+    -webkit-transform: scale(0.8); } }
+
+@keyframes scaleUp {
+  from {
+    opacity: 0;
+    -webkit-transform: scale(0.8);
+    transform: scale(0.8); } }
+
+@-webkit-keyframes scaleUpDown {
+  from {
+    opacity: 0;
+    -webkit-transform: scale(1.2); } }
+
+@keyframes scaleUpDown {
+  from {
+    opacity: 0;
+    -webkit-transform: scale(1.2);
+    transform: scale(1.2); } }
+
+@-webkit-keyframes scaleDownUp {
+  from { }
+  to {
+    opacity: 0;
+    -webkit-transform: scale(1.2); } }
+
+@keyframes scaleDownUp {
+  from { }
+  to {
+    opacity: 0;
+    -webkit-transform: scale(1.2);
+    transform: scale(1.2); } }
+
+@-webkit-keyframes scaleDownCenter {
+  from { }
+  to {
+    opacity: 0;
+    -webkit-transform: scale(0.7); } }
+
+@keyframes scaleDownCenter {
+  from { }
+  to {
+    opacity: 0;
+    -webkit-transform: scale(0.7);
+    transform: scale(0.7); } }
+
+@-webkit-keyframes scaleUpCenter {
+  from {
+    opacity: 0;
+    -webkit-transform: scale(0.7); } }
+
+@keyframes scaleUpCenter {
+  from {
+    opacity: 0;
+    -webkit-transform: scale(0.7);
+    transform: scale(0.7); } }
+
+/* rotate sides first and scale */
+.pt-page-rotateRightSideFirst {
+  -webkit-transform-origin: 0% 50%;
+  transform-origin: 0% 50%;
+  -webkit-animation: rotateRightSideFirst .8s both ease-in;
+  animation: rotateRightSideFirst .8s both ease-in; }
+
+.pt-page-rotateLeftSideFirst {
+  -webkit-transform-origin: 100% 50%;
+  transform-origin: 100% 50%;
+  -webkit-animation: rotateLeftSideFirst .8s both ease-in;
+  animation: rotateLeftSideFirst .8s both ease-in; }
+
+.pt-page-rotateTopSideFirst {
+  -webkit-transform-origin: 50% 100%;
+  transform-origin: 50% 100%;
+  -webkit-animation: rotateTopSideFirst .8s both ease-in;
+  animation: rotateTopSideFirst .8s both ease-in; }
+
+.pt-page-rotateBottomSideFirst {
+  -webkit-transform-origin: 50% 0%;
+  transform-origin: 50% 0%;
+  -webkit-animation: rotateBottomSideFirst .8s both ease-in;
+  animation: rotateBottomSideFirst .8s both ease-in; }
+
+/* flip */
+.pt-page-flipOutRight {
+  -webkit-transform-origin: 50% 50%;
+  transform-origin: 50% 50%;
+  -webkit-animation: flipOutRight .5s both ease-in;
+  animation: flipOutRight .5s both ease-in; }
+
+.pt-page-flipInLeft {
+  -webkit-transform-origin: 50% 50%;
+  transform-origin: 50% 50%;
+  -webkit-animation: flipInLeft .5s both ease-out;
+  animation: flipInLeft .5s both ease-out; }
+
+.pt-page-flipOutLeft {
+  -webkit-transform-origin: 50% 50%;
+  transform-origin: 50% 50%;
+  -webkit-animation: flipOutLeft .5s both ease-in;
+  animation: flipOutLeft .5s both ease-in; }
+
+.pt-page-flipInRight {
+  -webkit-transform-origin: 50% 50%;
+  transform-origin: 50% 50%;
+  -webkit-animation: flipInRight .5s both ease-out;
+  animation: flipInRight .5s both ease-out; }
+
+.pt-page-flipOutTop {
+  -webkit-transform-origin: 50% 50%;
+  transform-origin: 50% 50%;
+  -webkit-animation: flipOutTop .5s both ease-in;
+  animation: flipOutTop .5s both ease-in; }
+
+.pt-page-flipInBottom {
+  -webkit-transform-origin: 50% 50%;
+  transform-origin: 50% 50%;
+  -webkit-animation: flipInBottom .5s both ease-out;
+  animation: flipInBottom .5s both ease-out; }
+
+.pt-page-flipOutBottom {
+  -webkit-transform-origin: 50% 50%;
+  transform-origin: 50% 50%;
+  -webkit-animation: flipOutBottom .5s both ease-in;
+  animation: flipOutBottom .5s both ease-in; }
+
+.pt-page-flipInTop {
+  -webkit-transform-origin: 50% 50%;
+  transform-origin: 50% 50%;
+  -webkit-animation: flipInTop .5s both ease-out;
+  animation: flipInTop .5s both ease-out; }
+
+/* rotate fall */
+.pt-page-rotateFall {
+  -webkit-transform-origin: 0% 0%;
+  transform-origin: 0% 0%;
+  -webkit-animation: rotateFall 1s both ease-in;
+  animation: rotateFall 1s both ease-in; }
+
+/* rotate newspaper */
+.pt-page-rotateOutNewspaper {
+  -webkit-transform-origin: 50% 50%;
+  transform-origin: 50% 50%;
+  -webkit-animation: rotateOutNewspaper .5s both ease-in;
+  animation: rotateOutNewspaper .5s both ease-in; }
+
+.pt-page-rotateInNewspaper {
+  -webkit-transform-origin: 50% 50%;
+  transform-origin: 50% 50%;
+  -webkit-animation: rotateInNewspaper .5s both ease-out;
+  animation: rotateInNewspaper .5s both ease-out; }
+
+/* push */
+.pt-page-rotatePushLeft {
+  -webkit-transform-origin: 0% 50%;
+  transform-origin: 0% 50%;
+  -webkit-animation: rotatePushLeft .8s both ease;
+  animation: rotatePushLeft .8s both ease; }
+
+.pt-page-rotatePushRight {
+  -webkit-transform-origin: 100% 50%;
+  transform-origin: 100% 50%;
+  -webkit-animation: rotatePushRight .8s both ease;
+  animation: rotatePushRight .8s both ease; }
+
+.pt-page-rotatePushTop {
+  -webkit-transform-origin: 50% 0%;
+  transform-origin: 50% 0%;
+  -webkit-animation: rotatePushTop .8s both ease;
+  animation: rotatePushTop .8s both ease; }
+
+.pt-page-rotatePushBottom {
+  -webkit-transform-origin: 50% 100%;
+  transform-origin: 50% 100%;
+  -webkit-animation: rotatePushBottom .8s both ease;
+  animation: rotatePushBottom .8s both ease; }
+
+/* pull */
+.pt-page-rotatePullRight {
+  -webkit-transform-origin: 100% 50%;
+  transform-origin: 100% 50%;
+  -webkit-animation: rotatePullRight .5s both ease;
+  animation: rotatePullRight .5s both ease; }
+
+.pt-page-rotatePullLeft {
+  -webkit-transform-origin: 0% 50%;
+  transform-origin: 0% 50%;
+  -webkit-animation: rotatePullLeft .5s both ease;
+  animation: rotatePullLeft .5s both ease; }
+
+.pt-page-rotatePullTop {
+  -webkit-transform-origin: 50% 0%;
+  transform-origin: 50% 0%;
+  -webkit-animation: rotatePullTop .5s both ease;
+  animation: rotatePullTop .5s both ease; }
+
+.pt-page-rotatePullBottom {
+  -webkit-transform-origin: 50% 100%;
+  transform-origin: 50% 100%;
+  -webkit-animation: rotatePullBottom .5s both ease;
+  animation: rotatePullBottom .5s both ease; }
+
+/* fold */
+.pt-page-rotateFoldRight {
+  -webkit-transform-origin: 0% 50%;
+  transform-origin: 0% 50%;
+  -webkit-animation: rotateFoldRight .7s both ease;
+  animation: rotateFoldRight .7s both ease; }
+
+.pt-page-rotateFoldLeft {
+  -webkit-transform-origin: 100% 50%;
+  transform-origin: 100% 50%;
+  -webkit-animation: rotateFoldLeft .7s both ease;
+  animation: rotateFoldLeft .7s both ease; }
+
+.pt-page-rotateFoldTop {
+  -webkit-transform-origin: 50% 100%;
+  transform-origin: 50% 100%;
+  -webkit-animation: rotateFoldTop .7s both ease;
+  animation: rotateFoldTop .7s both ease; }
+
+.pt-page-rotateFoldBottom {
+  -webkit-transform-origin: 50% 0%;
+  transform-origin: 50% 0%;
+  -webkit-animation: rotateFoldBottom .7s both ease;
+  animation: rotateFoldBottom .7s both ease; }
+
+/* unfold */
+.pt-page-rotateUnfoldLeft {
+  -webkit-transform-origin: 100% 50%;
+  transform-origin: 100% 50%;
+  -webkit-animation: rotateUnfoldLeft .7s both ease;
+  animation: rotateUnfoldLeft .7s both ease; }
+
+.pt-page-rotateUnfoldRight {
+  -webkit-transform-origin: 0% 50%;
+  transform-origin: 0% 50%;
+  -webkit-animation: rotateUnfoldRight .7s both ease;
+  animation: rotateUnfoldRight .7s both ease; }
+
+.pt-page-rotateUnfoldTop {
+  -webkit-transform-origin: 50% 100%;
+  transform-origin: 50% 100%;
+  -webkit-animation: rotateUnfoldTop .7s both ease;
+  animation: rotateUnfoldTop .7s both ease; }
+
+.pt-page-rotateUnfoldBottom {
+  -webkit-transform-origin: 50% 0%;
+  transform-origin: 50% 0%;
+  -webkit-animation: rotateUnfoldBottom .7s both ease;
+  animation: rotateUnfoldBottom .7s both ease; }
+
+/* room walls */
+.pt-page-rotateRoomLeftOut {
+  -webkit-transform-origin: 100% 50%;
+  transform-origin: 100% 50%;
+  -webkit-animation: rotateRoomLeftOut .8s both ease;
+  animation: rotateRoomLeftOut .8s both ease; }
+
+.pt-page-rotateRoomLeftIn {
+  -webkit-transform-origin: 0% 50%;
+  transform-origin: 0% 50%;
+  -webkit-animation: rotateRoomLeftIn .8s both ease;
+  animation: rotateRoomLeftIn .8s both ease; }
+
+.pt-page-rotateRoomRightOut {
+  -webkit-transform-origin: 0% 50%;
+  transform-origin: 0% 50%;
+  -webkit-animation: rotateRoomRightOut .8s both ease;
+  animation: rotateRoomRightOut .8s both ease; }
+
+.pt-page-rotateRoomRightIn {
+  -webkit-transform-origin: 100% 50%;
+  transform-origin: 100% 50%;
+  -webkit-animation: rotateRoomRightIn .8s both ease;
+  animation: rotateRoomRightIn .8s both ease; }
+
+.pt-page-rotateRoomTopOut {
+  -webkit-transform-origin: 50% 100%;
+  transform-origin: 50% 100%;
+  -webkit-animation: rotateRoomTopOut .8s both ease;
+  animation: rotateRoomTopOut .8s both ease; }
+
+.pt-page-rotateRoomTopIn {
+  -webkit-transform-origin: 50% 0%;
+  transform-origin: 50% 0%;
+  -webkit-animation: rotateRoomTopIn .8s both ease;
+  animation: rotateRoomTopIn .8s both ease; }
+
+.pt-page-rotateRoomBottomOut {
+  -webkit-transform-origin: 50% 0%;
+  transform-origin: 50% 0%;
+  -webkit-animation: rotateRoomBottomOut .8s both ease;
+  animation: rotateRoomBottomOut .8s both ease; }
+
+.pt-page-rotateRoomBottomIn {
+  -webkit-transform-origin: 50% 100%;
+  transform-origin: 50% 100%;
+  -webkit-animation: rotateRoomBottomIn .8s both ease;
+  animation: rotateRoomBottomIn .8s both ease; }
+
+/* cube */
+.pt-page-rotateCubeLeftOut {
+  -webkit-transform-origin: 100% 50%;
+  transform-origin: 100% 50%;
+  -webkit-animation: rotateCubeLeftOut .6s both ease-in;
+  animation: rotateCubeLeftOut .6s both ease-in; }
+
+.pt-page-rotateCubeLeftIn {
+  -webkit-transform-origin: 0% 50%;
+  transform-origin: 0% 50%;
+  -webkit-animation: rotateCubeLeftIn .6s both ease-in;
+  animation: rotateCubeLeftIn .6s both ease-in; }
+
+.pt-page-rotateCubeRightOut {
+  -webkit-transform-origin: 0% 50%;
+  transform-origin: 0% 50%;
+  -webkit-animation: rotateCubeRightOut .6s both ease-in;
+  animation: rotateCubeRightOut .6s both ease-in; }
+
+.pt-page-rotateCubeRightIn {
+  -webkit-transform-origin: 100% 50%;
+  transform-origin: 100% 50%;
+  -webkit-animation: rotateCubeRightIn .6s both ease-in;
+  animation: rotateCubeRightIn .6s both ease-in; }
+
+.pt-page-rotateCubeTopOut {
+  -webkit-transform-origin: 50% 100%;
+  transform-origin: 50% 100%;
+  -webkit-animation: rotateCubeTopOut .6s both ease-in;
+  animation: rotateCubeTopOut .6s both ease-in; }
+
+.pt-page-rotateCubeTopIn {
+  -webkit-transform-origin: 50% 0%;
+  transform-origin: 50% 0%;
+  -webkit-animation: rotateCubeTopIn .6s both ease-in;
+  animation: rotateCubeTopIn .6s both ease-in; }
+
+.pt-page-rotateCubeBottomOut {
+  -webkit-transform-origin: 50% 0%;
+  transform-origin: 50% 0%;
+  -webkit-animation: rotateCubeBottomOut .6s both ease-in;
+  animation: rotateCubeBottomOut .6s both ease-in; }
+
+.pt-page-rotateCubeBottomIn {
+  -webkit-transform-origin: 50% 100%;
+  transform-origin: 50% 100%;
+  -webkit-animation: rotateCubeBottomIn .6s both ease-in;
+  animation: rotateCubeBottomIn .6s both ease-in; }
+
+/* carousel */
+.pt-page-rotateCarouselLeftOut {
+  -webkit-transform-origin: 100% 50%;
+  transform-origin: 100% 50%;
+  -webkit-animation: rotateCarouselLeftOut .8s both ease;
+  animation: rotateCarouselLeftOut .8s both ease; }
+
+.pt-page-rotateCarouselLeftIn {
+  -webkit-transform-origin: 0% 50%;
+  transform-origin: 0% 50%;
+  -webkit-animation: rotateCarouselLeftIn .8s both ease;
+  animation: rotateCarouselLeftIn .8s both ease; }
+
+.pt-page-rotateCarouselRightOut {
+  -webkit-transform-origin: 0% 50%;
+  transform-origin: 0% 50%;
+  -webkit-animation: rotateCarouselRightOut .8s both ease;
+  animation: rotateCarouselRightOut .8s both ease; }
+
+.pt-page-rotateCarouselRightIn {
+  -webkit-transform-origin: 100% 50%;
+  transform-origin: 100% 50%;
+  -webkit-animation: rotateCarouselRightIn .8s both ease;
+  animation: rotateCarouselRightIn .8s both ease; }
+
+.pt-page-rotateCarouselTopOut {
+  -webkit-transform-origin: 50% 100%;
+  transform-origin: 50% 100%;
+  -webkit-animation: rotateCarouselTopOut .8s both ease;
+  animation: rotateCarouselTopOut .8s both ease; }
+
+.pt-page-rotateCarouselTopIn {
+  -webkit-transform-origin: 50% 0%;
+  transform-origin: 50% 0%;
+  -webkit-animation: rotateCarouselTopIn .8s both ease;
+  animation: rotateCarouselTopIn .8s both ease; }
+
+.pt-page-rotateCarouselBottomOut {
+  -webkit-transform-origin: 50% 0%;
+  transform-origin: 50% 0%;
+  -webkit-animation: rotateCarouselBottomOut .8s both ease;
+  animation: rotateCarouselBottomOut .8s both ease; }
+
+.pt-page-rotateCarouselBottomIn {
+  -webkit-transform-origin: 50% 100%;
+  transform-origin: 50% 100%;
+  -webkit-animation: rotateCarouselBottomIn .8s both ease;
+  animation: rotateCarouselBottomIn .8s both ease; }
+
+/* sides */
+.pt-page-rotateSidesOut {
+  -webkit-transform-origin: -50% 50%;
+  transform-origin: -50% 50%;
+  -webkit-animation: rotateSidesOut .5s both ease-in;
+  animation: rotateSidesOut .5s both ease-in; }
+
+.pt-page-rotateSidesIn {
+  -webkit-transform-origin: 150% 50%;
+  transform-origin: 150% 50%;
+  -webkit-animation: rotateSidesIn .5s both ease-out;
+  animation: rotateSidesIn .5s both ease-out; }
+
+/* slide */
+.pt-page-rotateSlideOut {
+  -webkit-animation: rotateSlideOut 1s both ease;
+  animation: rotateSlideOut 1s both ease; }
+
+.pt-page-rotateSlideIn {
+  -webkit-animation: rotateSlideIn 1s both ease;
+  animation: rotateSlideIn 1s both ease; }
+
+/********************************* keyframes **************************************/
+/* rotate sides first and scale */
+@-webkit-keyframes rotateRightSideFirst {
+  0% { }
+  40% {
+    -webkit-transform: rotateY(15deg);
+    opacity: .8;
+    -webkit-animation-timing-function: ease-out; }
+  100% {
+    -webkit-transform: scale(0.8) translateZ(-200px);
+    opacity: 0; } }
+
+@keyframes rotateRightSideFirst {
+  0% { }
+  40% {
+    -webkit-transform: rotateY(15deg);
+    transform: rotateY(15deg);
+    opacity: .8;
+    -webkit-animation-timing-function: ease-out;
+    animation-timing-function: ease-out; }
+  100% {
+    -webkit-transform: scale(0.8) translateZ(-200px);
+    transform: scale(0.8) translateZ(-200px);
+    opacity: 0; } }
+
+@-webkit-keyframes rotateLeftSideFirst {
+  0% { }
+  40% {
+    -webkit-transform: rotateY(-15deg);
+    opacity: .8;
+    -webkit-animation-timing-function: ease-out; }
+  100% {
+    -webkit-transform: scale(0.8) translateZ(-200px);
+    opacity: 0; } }
+
+@keyframes rotateLeftSideFirst {
+  0% { }
+  40% {
+    -webkit-transform: rotateY(-15deg);
+    transform: rotateY(-15deg);
+    opacity: .8;
+    -webkit-animation-timing-function: ease-out;
+    animation-timing-function: ease-out; }
+  100% {
+    -webkit-transform: scale(0.8) translateZ(-200px);
+    transform: scale(0.8) translateZ(-200px);
+    opacity: 0; } }
+
+@-webkit-keyframes rotateTopSideFirst {
+  0% { }
+  40% {
+    -webkit-transform: rotateX(15deg);
+    opacity: .8;
+    -webkit-animation-timing-function: ease-out; }
+  100% {
+    -webkit-transform: scale(0.8) translateZ(-200px);
+    opacity: 0; } }
+
+@keyframes rotateTopSideFirst {
+  0% { }
+  40% {
+    -webkit-transform: rotateX(15deg);
+    transform: rotateX(15deg);
+    opacity: .8;
+    -webkit-animation-timing-function: ease-out;
+    animation-timing-function: ease-out; }
+  100% {
+    -webkit-transform: scale(0.8) translateZ(-200px);
+    transform: scale(0.8) translateZ(-200px);
+    opacity: 0; } }
+
+@-webkit-keyframes rotateBottomSideFirst {
+  0% { }
+  40% {
+    -webkit-transform: rotateX(-15deg);
+    opacity: .8;
+    -webkit-animation-timing-function: ease-out; }
+  100% {
+    -webkit-transform: scale(0.8) translateZ(-200px);
+    opacity: 0; } }
+
+@keyframes rotateBottomSideFirst {
+  0% { }
+  40% {
+    -webkit-transform: rotateX(-15deg);
+    transform: rotateX(-15deg);
+    opacity: .8;
+    -webkit-animation-timing-function: ease-out;
+    animation-timing-function: ease-out; }
+  100% {
+    -webkit-transform: scale(0.8) translateZ(-200px);
+    transform: scale(0.8) translateZ(-200px);
+    opacity: 0; } }
+
+/* flip */
+@-webkit-keyframes flipOutRight {
+  from { }
+  to {
+    -webkit-transform: translateZ(-1000px) rotateY(90deg);
+    opacity: 0.2; } }
+
+@keyframes flipOutRight {
+  from { }
+  to {
+    -webkit-transform: translateZ(-1000px) rotateY(90deg);
+    transform: translateZ(-1000px) rotateY(90deg);
+    opacity: 0.2; } }
+
+@-webkit-keyframes flipInLeft {
+  from {
+    -webkit-transform: translateZ(-1000px) rotateY(-90deg);
+    opacity: 0.2; } }
+
+@keyframes flipInLeft {
+  from {
+    -webkit-transform: translateZ(-1000px) rotateY(-90deg);
+    transform: translateZ(-1000px) rotateY(-90deg);
+    opacity: 0.2; } }
+
+@-webkit-keyframes flipOutLeft {
+  from { }
+  to {
+    -webkit-transform: translateZ(-1000px) rotateY(-90deg);
+    opacity: 0.2; } }
+
+@keyframes flipOutLeft {
+  from { }
+  to {
+    -webkit-transform: translateZ(-1000px) rotateY(-90deg);
+    transform: translateZ(-1000px) rotateY(-90deg);
+    opacity: 0.2; } }
+
+@-webkit-keyframes flipInRight {
+  from {
+    -webkit-transform: translateZ(-1000px) rotateY(90deg);
+    opacity: 0.2; } }
+
+@keyframes flipInRight {
+  from {
+    -webkit-transform: translateZ(-1000px) rotateY(90deg);
+    transform: translateZ(-1000px) rotateY(90deg);
+    opacity: 0.2; } }
+
+@-webkit-keyframes flipOutTop {
+  from { }
+  to {
+    -webkit-transform: translateZ(-1000px) rotateX(90deg);
+    opacity: 0.2; } }
+
+@keyframes flipOutTop {
+  from { }
+  to {
+    -webkit-transform: translateZ(-1000px) rotateX(90deg);
+    transform: translateZ(-1000px) rotateX(90deg);
+    opacity: 0.2; } }
+
+@-webkit-keyframes flipInBottom {
+  from {
+    -webkit-transform: translateZ(-1000px) rotateX(-90deg);
+    opacity: 0.2; } }
+
+@keyframes flipInBottom {
+  from {
+    -webkit-transform: translateZ(-1000px) rotateX(-90deg);
+    transform: translateZ(-1000px) rotateX(-90deg);
+    opacity: 0.2; } }
+
+@-webkit-keyframes flipOutBottom {
+  from { }
+  to {
+    -webkit-transform: translateZ(-1000px) rotateX(-90deg);
+    opacity: 0.2; } }
+
+@keyframes flipOutBottom {
+  from { }
+  to {
+    -webkit-transform: translateZ(-1000px) rotateX(-90deg);
+    transform: translateZ(-1000px) rotateX(-90deg);
+    opacity: 0.2; } }
+
+@-webkit-keyframes flipInTop {
+  from {
+    -webkit-transform: translateZ(-1000px) rotateX(90deg);
+    opacity: 0.2; } }
+
+@keyframes flipInTop {
+  from {
+    -webkit-transform: translateZ(-1000px) rotateX(90deg);
+    transform: translateZ(-1000px) rotateX(90deg);
+    opacity: 0.2; } }
+
+/* fall */
+@-webkit-keyframes rotateFall {
+  0% {
+    -webkit-transform: rotateZ(0deg); }
+  20% {
+    -webkit-transform: rotateZ(10deg);
+    -webkit-animation-timing-function: ease-out; }
+  40% {
+    -webkit-transform: rotateZ(17deg); }
+  60% {
+    -webkit-transform: rotateZ(16deg); }
+  100% {
+    -webkit-transform: translateY(100%) rotateZ(17deg); } }
+
+@keyframes rotateFall {
+  0% {
+    -webkit-transform: rotateZ(0deg);
+    transform: rotateZ(0deg); }
+  20% {
+    -webkit-transform: rotateZ(10deg);
+    transform: rotateZ(10deg);
+    -webkit-animation-timing-function: ease-out;
+    animation-timing-function: ease-out; }
+  40% {
+    -webkit-transform: rotateZ(17deg);
+    transform: rotateZ(17deg); }
+  60% {
+    -webkit-transform: rotateZ(16deg);
+    transform: rotateZ(16deg); }
+  100% {
+    -webkit-transform: translateY(100%) rotateZ(17deg);
+    transform: translateY(100%) rotateZ(17deg); } }
+
+/* newspaper */
+@-webkit-keyframes rotateOutNewspaper {
+  from { }
+  to {
+    -webkit-transform: translateZ(-3000px) rotateZ(360deg);
+    opacity: 0; } }
+
+@keyframes rotateOutNewspaper {
+  from { }
+  to {
+    -webkit-transform: translateZ(-3000px) rotateZ(360deg);
+    transform: translateZ(-3000px) rotateZ(360deg);
+    opacity: 0; } }
+
+@-webkit-keyframes rotateInNewspaper {
+  from {
+    -webkit-transform: translateZ(-3000px) rotateZ(-360deg);
+    opacity: 0; } }
+
+@keyframes rotateInNewspaper {
+  from {
+    -webkit-transform: translateZ(-3000px) rotateZ(-360deg);
+    transform: translateZ(-3000px) rotateZ(-360deg);
+    opacity: 0; } }
+
+/* push */
+@-webkit-keyframes rotatePushLeft {
+  from { }
+  to {
+    opacity: 0;
+    -webkit-transform: rotateY(90deg); } }
+
+@keyframes rotatePushLeft {
+  from { }
+  to {
+    opacity: 0;
+    -webkit-transform: rotateY(90deg);
+    transform: rotateY(90deg); } }
+
+@-webkit-keyframes rotatePushRight {
+  from { }
+  to {
+    opacity: 0;
+    -webkit-transform: rotateY(-90deg); } }
+
+@keyframes rotatePushRight {
+  from { }
+  to {
+    opacity: 0;
+    -webkit-transform: rotateY(-90deg);
+    transform: rotateY(-90deg); } }
+
+@-webkit-keyframes rotatePushTop {
+  from { }
+  to {
+    opacity: 0;
+    -webkit-transform: rotateX(-90deg); } }
+
+@keyframes rotatePushTop {
+  from { }
+  to {
+    opacity: 0;
+    -webkit-transform: rotateX(-90deg);
+    transform: rotateX(-90deg); } }
+
+@-webkit-keyframes rotatePushBottom {
+  from { }
+  to {
+    opacity: 0;
+    -webkit-transform: rotateX(90deg); } }
+
+@keyframes rotatePushBottom {
+  from { }
+  to {
+    opacity: 0;
+    -webkit-transform: rotateX(90deg);
+    transform: rotateX(90deg); } }
+
+/* pull */
+@-webkit-keyframes rotatePullRight {
+  from {
+    opacity: 0;
+    -webkit-transform: rotateY(-90deg); } }
+
+@keyframes rotatePullRight {
+  from {
+    opacity: 0;
+    -webkit-transform: rotateY(-90deg);
+    transform: rotateY(-90deg); } }
+
+@-webkit-keyframes rotatePullLeft {
+  from {
+    opacity: 0;
+    -webkit-transform: rotateY(90deg); } }
+
+@keyframes rotatePullLeft {
+  from {
+    opacity: 0;
+    -webkit-transform: rotateY(90deg);
+    transform: rotateY(90deg); } }
+
+@-webkit-keyframes rotatePullTop {
+  from {
+    opacity: 0;
+    -webkit-transform: rotateX(-90deg); } }
+
+@keyframes rotatePullTop {
+  from {
+    opacity: 0;
+    -webkit-transform: rotateX(-90deg);
+    transform: rotateX(-90deg); } }
+
+@-webkit-keyframes rotatePullBottom {
+  from {
+    opacity: 0;
+    -webkit-transform: rotateX(90deg); } }
+
+@keyframes rotatePullBottom {
+  from {
+    opacity: 0;
+    -webkit-transform: rotateX(90deg);
+    transform: rotateX(90deg); } }
+
+/* fold */
+@-webkit-keyframes rotateFoldRight {
+  from { }
+  to {
+    opacity: 0;
+    -webkit-transform: translateX(100%) rotateY(90deg); } }
+
+@keyframes rotateFoldRight {
+  from { }
+  to {
+    opacity: 0;
+    -webkit-transform: translateX(100%) rotateY(90deg);
+    transform: translateX(100%) rotateY(90deg); } }
+
+@-webkit-keyframes rotateFoldLeft {
+  from { }
+  to {
+    opacity: 0;
+    -webkit-transform: translateX(-100%) rotateY(-90deg); } }
+
+@keyframes rotateFoldLeft {
+  from { }
+  to {
+    opacity: 0;
+    -webkit-transform: translateX(-100%) rotateY(-90deg);
+    transform: translateX(-100%) rotateY(-90deg); } }
+
+@-webkit-keyframes rotateFoldTop {
+  from { }
+  to {
+    opacity: 0;
+    -webkit-transform: translateY(-100%) rotateX(90deg); } }
+
+@keyframes rotateFoldTop {
+  from { }
+  to {
+    opacity: 0;
+    -webkit-transform: translateY(-100%) rotateX(90deg);
+    transform: translateY(-100%) rotateX(90deg); } }
+
+@-webkit-keyframes rotateFoldBottom {
+  from { }
+  to {
+    opacity: 0;
+    -webkit-transform: translateY(100%) rotateX(-90deg); } }
+
+@keyframes rotateFoldBottom {
+  from { }
+  to {
+    opacity: 0;
+    -webkit-transform: translateY(100%) rotateX(-90deg);
+    transform: translateY(100%) rotateX(-90deg); } }
+
+/* unfold */
+@-webkit-keyframes rotateUnfoldLeft {
+  from {
+    opacity: 0;
+    -webkit-transform: translateX(-100%) rotateY(-90deg); } }
+
+@keyframes rotateUnfoldLeft {
+  from {
+    opacity: 0;
+    -webkit-transform: translateX(-100%) rotateY(-90deg);
+    transform: translateX(-100%) rotateY(-90deg); } }
+
+@-webkit-keyframes rotateUnfoldRight {
+  from {
+    opacity: 0;
+    -webkit-transform: translateX(100%) rotateY(90deg); } }
+
+@keyframes rotateUnfoldRight {
+  from {
+    opacity: 0;
+    -webkit-transform: translateX(100%) rotateY(90deg);
+    transform: translateX(100%) rotateY(90deg); } }
+
+@-webkit-keyframes rotateUnfoldTop {
+  from {
+    opacity: 0;
+    -webkit-transform: translateY(-100%) rotateX(90deg); } }
+
+@keyframes rotateUnfoldTop {
+  from {
+    opacity: 0;
+    -webkit-transform: translateY(-100%) rotateX(90deg);
+    transform: translateY(-100%) rotateX(90deg); } }
+
+@-webkit-keyframes rotateUnfoldBottom {
+  from {
+    opacity: 0;
+    -webkit-transform: translateY(100%) rotateX(-90deg); } }
+
+@keyframes rotateUnfoldBottom {
+  from {
+    opacity: 0;
+    -webkit-transform: translateY(100%) rotateX(-90deg);
+    transform: translateY(100%) rotateX(-90deg); } }
+
+/* room walls */
+@-webkit-keyframes rotateRoomLeftOut {
+  from { }
+  to {
+    opacity: .3;
+    -webkit-transform: translateX(-100%) rotateY(90deg); } }
+
+@keyframes rotateRoomLeftOut {
+  from { }
+  to {
+    opacity: .3;
+    -webkit-transform: translateX(-100%) rotateY(90deg);
+    transform: translateX(-100%) rotateY(90deg); } }
+
+@-webkit-keyframes rotateRoomLeftIn {
+  from {
+    opacity: .3;
+    -webkit-transform: translateX(100%) rotateY(-90deg); } }
+
+@keyframes rotateRoomLeftIn {
+  from {
+    opacity: .3;
+    -webkit-transform: translateX(100%) rotateY(-90deg);
+    transform: translateX(100%) rotateY(-90deg); } }
+
+@-webkit-keyframes rotateRoomRightOut {
+  from { }
+  to {
+    opacity: .3;
+    -webkit-transform: translateX(100%) rotateY(-90deg); } }
+
+@keyframes rotateRoomRightOut {
+  from { }
+  to {
+    opacity: .3;
+    -webkit-transform: translateX(100%) rotateY(-90deg);
+    transform: translateX(100%) rotateY(-90deg); } }
+
+@-webkit-keyframes rotateRoomRightIn {
+  from {
+    opacity: .3;
+    -webkit-transform: translateX(-100%) rotateY(90deg); } }
+
+@keyframes rotateRoomRightIn {
+  from {
+    opacity: .3;
+    -webkit-transform: translateX(-100%) rotateY(90deg);
+    transform: translateX(-100%) rotateY(90deg); } }
+
+@-webkit-keyframes rotateRoomTopOut {
+  from { }
+  to {
+    opacity: .3;
+    -webkit-transform: translateY(-100%) rotateX(-90deg); } }
+
+@keyframes rotateRoomTopOut {
+  from { }
+  to {
+    opacity: .3;
+    -webkit-transform: translateY(-100%) rotateX(-90deg);
+    transform: translateY(-100%) rotateX(-90deg); } }
+
+@-webkit-keyframes rotateRoomTopIn {
+  from {
+    opacity: .3;
+    -webkit-transform: translateY(100%) rotateX(90deg); } }
+
+@keyframes rotateRoomTopIn {
+  from {
+    opacity: .3;
+    -webkit-transform: translateY(100%) rotateX(90deg);
+    transform: translateY(100%) rotateX(90deg); } }
+
+@-webkit-keyframes rotateRoomBottomOut {
+  from { }
+  to {
+    opacity: .3;
+    -webkit-transform: translateY(100%) rotateX(90deg); } }
+
+@keyframes rotateRoomBottomOut {
+  from { }
+  to {
+    opacity: .3;
+    -webkit-transform: translateY(100%) rotateX(90deg);
+    transform: translateY(100%) rotateX(90deg); } }
+
+@-webkit-keyframes rotateRoomBottomIn {
+  from {
+    opacity: .3;
+    -webkit-transform: translateY(-100%) rotateX(-90deg); } }
+
+@keyframes rotateRoomBottomIn {
+  from {
+    opacity: .3;
+    -webkit-transform: translateY(-100%) rotateX(-90deg);
+    transform: translateY(-100%) rotateX(-90deg); } }
+
+/* cube */
+@-webkit-keyframes rotateCubeLeftOut {
+  0% { }
+  50% {
+    -webkit-animation-timing-function: ease-out;
+    -webkit-transform: translateX(-50%) translateZ(-200px) rotateY(-45deg); }
+  100% {
+    opacity: .3;
+    -webkit-transform: translateX(-100%) rotateY(-90deg); } }
+
+@keyframes rotateCubeLeftOut {
+  0% { }
+  50% {
+    -webkit-animation-timing-function: ease-out;
+    animation-timing-function: ease-out;
+    -webkit-transform: translateX(-50%) translateZ(-200px) rotateY(-45deg);
+    transform: translateX(-50%) translateZ(-200px) rotateY(-45deg); }
+  100% {
+    opacity: .3;
+    -webkit-transform: translateX(-100%) rotateY(-90deg);
+    transform: translateX(-100%) rotateY(-90deg); } }
+
+@-webkit-keyframes rotateCubeLeftIn {
+  0% {
+    opacity: .3;
+    -webkit-transform: translateX(100%) rotateY(90deg); }
+  50% {
+    -webkit-animation-timing-function: ease-out;
+    -webkit-transform: translateX(50%) translateZ(-200px) rotateY(45deg); } }
+
+@keyframes rotateCubeLeftIn {
+  0% {
+    opacity: .3;
+    -webkit-transform: translateX(100%) rotateY(90deg);
+    transform: translateX(100%) rotateY(90deg); }
+  50% {
+    -webkit-animation-timing-function: ease-out;
+    animation-timing-function: ease-out;
+    -webkit-transform: translateX(50%) translateZ(-200px) rotateY(45deg);
+    transform: translateX(50%) translateZ(-200px) rotateY(45deg); } }
+
+@-webkit-keyframes rotateCubeRightOut {
+  0% { }
+  50% {
+    -webkit-animation-timing-function: ease-out;
+    -webkit-transform: translateX(50%) translateZ(-200px) rotateY(45deg); }
+  100% {
+    opacity: .3;
+    -webkit-transform: translateX(100%) rotateY(90deg); } }
+
+@keyframes rotateCubeRightOut {
+  0% { }
+  50% {
+    -webkit-animation-timing-function: ease-out;
+    animation-timing-function: ease-out;
+    -webkit-transform: translateX(50%) translateZ(-200px) rotateY(45deg);
+    transform: translateX(50%) translateZ(-200px) rotateY(45deg); }
+  100% {
+    opacity: .3;
+    -webkit-transform: translateX(100%) rotateY(90deg);
+    transform: translateX(100%) rotateY(90deg); } }
+
+@-webkit-keyframes rotateCubeRightIn {
+  0% {
+    opacity: .3;
+    -webkit-transform: translateX(-100%) rotateY(-90deg); }
+  50% {
+    -webkit-animation-timing-function: ease-out;
+    -webkit-transform: translateX(-50%) translateZ(-200px) rotateY(-45deg); } }
+
+@keyframes rotateCubeRightIn {
+  0% {
+    opacity: .3;
+    -webkit-transform: translateX(-100%) rotateY(-90deg);
+    transform: translateX(-100%) rotateY(-90deg); }
+  50% {
+    -webkit-animation-timing-function: ease-out;
+    animation-timing-function: ease-out;
+    -webkit-transform: translateX(-50%) translateZ(-200px) rotateY(-45deg);
+    transform: translateX(-50%) translateZ(-200px) rotateY(-45deg); } }
+
+@-webkit-keyframes rotateCubeTopOut {
+  0% { }
+  50% {
+    -webkit-animation-timing-function: ease-out;
+    -webkit-transform: translateY(-50%) translateZ(-200px) rotateX(45deg); }
+  100% {
+    opacity: .3;
+    -webkit-transform: translateY(-100%) rotateX(90deg); } }
+
+@keyframes rotateCubeTopOut {
+  0% { }
+  50% {
+    -webkit-animation-timing-function: ease-out;
+    animation-timing-function: ease-out;
+    -webkit-transform: translateY(-50%) translateZ(-200px) rotateX(45deg);
+    transform: translateY(-50%) translateZ(-200px) rotateX(45deg); }
+  100% {
+    opacity: .3;
+    -webkit-transform: translateY(-100%) rotateX(90deg);
+    transform: translateY(-100%) rotateX(90deg); } }
+
+@-webkit-keyframes rotateCubeTopIn {
+  0% {
+    opacity: .3;
+    -webkit-transform: translateY(100%) rotateX(-90deg); }
+  50% {
+    -webkit-animation-timing-function: ease-out;
+    -webkit-transform: translateY(50%) translateZ(-200px) rotateX(-45deg); } }
+
+@keyframes rotateCubeTopIn {
+  0% {
+    opacity: .3;
+    -webkit-transform: translateY(100%) rotateX(-90deg);
+    transform: translateY(100%) rotateX(-90deg); }
+  50% {
+    -webkit-animation-timing-function: ease-out;
+    animation-timing-function: ease-out;
+    -webkit-transform: translateY(50%) translateZ(-200px) rotateX(-45deg);
+    transform: translateY(50%) translateZ(-200px) rotateX(-45deg); } }
+
+@-webkit-keyframes rotateCubeBottomOut {
+  0% { }
+  50% {
+    -webkit-animation-timing-function: ease-out;
+    -webkit-transform: translateY(50%) translateZ(-200px) rotateX(-45deg); }
+  100% {
+    opacity: .3;
+    -webkit-transform: translateY(100%) rotateX(-90deg); } }
+
+@keyframes rotateCubeBottomOut {
+  0% { }
+  50% {
+    -webkit-animation-timing-function: ease-out;
+    animation-timing-function: ease-out;
+    -webkit-transform: translateY(50%) translateZ(-200px) rotateX(-45deg);
+    transform: translateY(50%) translateZ(-200px) rotateX(-45deg); }
+  100% {
+    opacity: .3;
+    -webkit-transform: translateY(100%) rotateX(-90deg);
+    transform: translateY(100%) rotateX(-90deg); } }
+
+@-webkit-keyframes rotateCubeBottomIn {
+  0% {
+    opacity: .3;
+    -webkit-transform: translateY(-100%) rotateX(90deg); }
+  50% {
+    -webkit-animation-timing-function: ease-out;
+    -webkit-transform: translateY(-50%) translateZ(-200px) rotateX(45deg); } }
+
+@keyframes rotateCubeBottomIn {
+  0% {
+    opacity: .3;
+    -webkit-transform: translateY(-100%) rotateX(90deg);
+    transform: translateY(-100%) rotateX(90deg); }
+  50% {
+    -webkit-animation-timing-function: ease-out;
+    animation-timing-function: ease-out;
+    -webkit-transform: translateY(-50%) translateZ(-200px) rotateX(45deg);
+    transform: translateY(-50%) translateZ(-200px) rotateX(45deg); } }
+
+/* carousel */
+@-webkit-keyframes rotateCarouselLeftOut {
+  from { }
+  to {
+    opacity: .3;
+    -webkit-transform: translateX(-150%) scale(0.4) rotateY(-65deg); } }
+
+@keyframes rotateCarouselLeftOut {
+  from { }
+  to {
+    opacity: .3;
+    -webkit-transform: translateX(-150%) scale(0.4) rotateY(-65deg);
+    transform: translateX(-150%) scale(0.4) rotateY(-65deg); } }
+
+@-webkit-keyframes rotateCarouselLeftIn {
+  from {
+    opacity: .3;
+    -webkit-transform: translateX(200%) scale(0.4) rotateY(65deg); } }
+
+@keyframes rotateCarouselLeftIn {
+  from {
+    opacity: .3;
+    -webkit-transform: translateX(200%) scale(0.4) rotateY(65deg);
+    transform: translateX(200%) scale(0.4) rotateY(65deg); } }
+
+@-webkit-keyframes rotateCarouselRightOut {
+  from { }
+  to {
+    opacity: .3;
+    -webkit-transform: translateX(200%) scale(0.4) rotateY(65deg); } }
+
+@keyframes rotateCarouselRightOut {
+  from { }
+  to {
+    opacity: .3;
+    -webkit-transform: translateX(200%) scale(0.4) rotateY(65deg);
+    transform: translateX(200%) scale(0.4) rotateY(65deg); } }
+
+@-webkit-keyframes rotateCarouselRightIn {
+  from {
+    opacity: .3;
+    -webkit-transform: translateX(-200%) scale(0.4) rotateY(-65deg); } }
+
+@keyframes rotateCarouselRightIn {
+  from {
+    opacity: .3;
+    -webkit-transform: translateX(-200%) scale(0.4) rotateY(-65deg);
+    transform: translateX(-200%) scale(0.4) rotateY(-65deg); } }
+
+@-webkit-keyframes rotateCarouselTopOut {
+  from { }
+  to {
+    opacity: .3;
+    -webkit-transform: translateY(-200%) scale(0.4) rotateX(65deg); } }
+
+@keyframes rotateCarouselTopOut {
+  from { }
+  to {
+    opacity: .3;
+    -webkit-transform: translateY(-200%) scale(0.4) rotateX(65deg);
+    transform: translateY(-200%) scale(0.4) rotateX(65deg); } }
+
+@-webkit-keyframes rotateCarouselTopIn {
+  from {
+    opacity: .3;
+    -webkit-transform: translateY(200%) scale(0.4) rotateX(-65deg); } }
+
+@keyframes rotateCarouselTopIn {
+  from {
+    opacity: .3;
+    -webkit-transform: translateY(200%) scale(0.4) rotateX(-65deg);
+    transform: translateY(200%) scale(0.4) rotateX(-65deg); } }
+
+@-webkit-keyframes rotateCarouselBottomOut {
+  from { }
+  to {
+    opacity: .3;
+    -webkit-transform: translateY(200%) scale(0.4) rotateX(-65deg); } }
+
+@keyframes rotateCarouselBottomOut {
+  from { }
+  to {
+    opacity: .3;
+    -webkit-transform: translateY(200%) scale(0.4) rotateX(-65deg);
+    transform: translateY(200%) scale(0.4) rotateX(-65deg); } }
+
+@-webkit-keyframes rotateCarouselBottomIn {
+  from {
+    opacity: .3;
+    -webkit-transform: translateY(-200%) scale(0.4) rotateX(65deg); } }
+
+@keyframes rotateCarouselBottomIn {
+  from {
+    opacity: .3;
+    -webkit-transform: translateY(-200%) scale(0.4) rotateX(65deg);
+    transform: translateY(-200%) scale(0.4) rotateX(65deg); } }
+
+/* sides */
+@-webkit-keyframes rotateSidesOut {
+  from { }
+  to {
+    opacity: 0;
+    -webkit-transform: translateZ(-500px) rotateY(90deg); } }
+
+@keyframes rotateSidesOut {
+  from { }
+  to {
+    opacity: 0;
+    -webkit-transform: translateZ(-500px) rotateY(90deg);
+    transform: translateZ(-500px) rotateY(90deg); } }
+
+@-webkit-keyframes rotateSidesIn {
+  from {
+    opacity: 0;
+    -webkit-transform: translateZ(-500px) rotateY(-90deg); } }
+
+@keyframes rotateSidesIn {
+  from {
+    opacity: 0;
+    -webkit-transform: translateZ(-500px) rotateY(-90deg);
+    transform: translateZ(-500px) rotateY(-90deg); } }
+
+/* slide */
+@-webkit-keyframes rotateSlideOut {
+  0% { }
+  25% {
+    opacity: .5;
+    -webkit-transform: translateZ(-500px); }
+  75% {
+    opacity: .5;
+    -webkit-transform: translateZ(-500px) translateX(-200%); }
+  100% {
+    opacity: .5;
+    -webkit-transform: translateZ(-500px) translateX(-200%); } }
+
+@keyframes rotateSlideOut {
+  0% { }
+  25% {
+    opacity: .5;
+    -webkit-transform: translateZ(-500px);
+    transform: translateZ(-500px); }
+  75% {
+    opacity: .5;
+    -webkit-transform: translateZ(-500px) translateX(-200%);
+    transform: translateZ(-500px) translateX(-200%); }
+  100% {
+    opacity: .5;
+    -webkit-transform: translateZ(-500px) translateX(-200%);
+    transform: translateZ(-500px) translateX(-200%); } }
+
+@-webkit-keyframes rotateSlideIn {
+  0%, 25% {
+    opacity: .5;
+    -webkit-transform: translateZ(-500px) translateX(200%); }
+  75% {
+    opacity: .5;
+    -webkit-transform: translateZ(-500px); }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateZ(0) translateX(0); } }
+
+@keyframes rotateSlideIn {
+  0%, 25% {
+    opacity: .5;
+    -webkit-transform: translateZ(-500px) translateX(200%);
+    transform: translateZ(-500px) translateX(200%); }
+  75% {
+    opacity: .5;
+    -webkit-transform: translateZ(-500px);
+    transform: translateZ(-500px); }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateZ(0) translateX(0);
+    transform: translateZ(0) translateX(0); } }
+
+/* animation delay classes */
+.pt-page-delay100 {
+  -webkit-animation-delay: .1s;
+  animation-delay: .1s; }
+
+.pt-page-delay180 {
+  -webkit-animation-delay: .180s;
+  animation-delay: .180s; }
+
+.pt-page-delay200 {
+  -webkit-animation-delay: .2s;
+  animation-delay: .2s; }
+
+.pt-page-delay300 {
+  -webkit-animation-delay: .3s;
+  animation-delay: .3s; }
+
+.pt-page-delay400 {
+  -webkit-animation-delay: .4s;
+  animation-delay: .4s; }
+
+.pt-page-delay500 {
+  -webkit-animation-delay: .5s;
+  animation-delay: .5s; }
+
+.pt-page-delay700 {
+  -webkit-animation-delay: .7s;
+  animation-delay: .7s; }
+
+.pt-page-delay1000 {
+  -webkit-animation-delay: 1s;
+  animation-delay: 1s; }
+
+/* perfect-scrollbar v0.8.1 */
+.ps {
+  -ms-touch-action: auto;
+  touch-action: auto;
+  overflow: hidden !important;
+  -ms-overflow-style: none; }
+
+@supports (-ms-overflow-style: none) {
+  .ps {
+    overflow: auto !important; } }
+
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+  .ps {
+    overflow: auto !important; } }
+
+.ps.ps--active-x > .ps__scrollbar-x-rail,
+.ps.ps--active-y > .ps__scrollbar-y-rail {
+  display: block;
+  background-color: transparent; }
+
+.ps.ps--in-scrolling.ps--x > .ps__scrollbar-x-rail {
+  background-color: #eee;
+  opacity: 0.9; }
+
+.ps.ps--in-scrolling.ps--x > .ps__scrollbar-x-rail > .ps__scrollbar-x {
+  background-color: #999;
+  height: 11px; }
+
+.ps.ps--in-scrolling.ps--y > .ps__scrollbar-y-rail {
+  background-color: #eee;
+  opacity: 0.9; }
+
+.ps.ps--in-scrolling.ps--y > .ps__scrollbar-y-rail > .ps__scrollbar-y {
+  background-color: #999;
+  width: 11px; }
+
+.ps > .ps__scrollbar-x-rail {
+  display: none;
+  position: absolute;
+  /* please don't change 'position' */
+  opacity: 0;
+  -webkit-transition: background-color .2s linear, opacity .2s linear;
+  -o-transition: background-color .2s linear, opacity .2s linear;
+  -moz-transition: background-color .2s linear, opacity .2s linear;
+  transition: background-color .2s linear, opacity .2s linear;
+  bottom: 0px;
+  /* there must be 'bottom' for ps__scrollbar-x-rail */
+  height: 15px; }
+
+.ps > .ps__scrollbar-x-rail > .ps__scrollbar-x {
+  position: absolute;
+  /* please don't change 'position' */
+  background-color: #aaa;
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  border-radius: 6px;
+  -webkit-transition: background-color .2s linear, height .2s linear, width .2s ease-in-out, -webkit-border-radius .2s ease-in-out;
+  transition: background-color .2s linear, height .2s linear, width .2s ease-in-out, -webkit-border-radius .2s ease-in-out;
+  -o-transition: background-color .2s linear, height .2s linear, width .2s ease-in-out, border-radius .2s ease-in-out;
+  -moz-transition: background-color .2s linear, height .2s linear, width .2s ease-in-out, border-radius .2s ease-in-out, -moz-border-radius .2s ease-in-out;
+  transition: background-color .2s linear, height .2s linear, width .2s ease-in-out, border-radius .2s ease-in-out;
+  transition: background-color .2s linear, height .2s linear, width .2s ease-in-out, border-radius .2s ease-in-out, -webkit-border-radius .2s ease-in-out, -moz-border-radius .2s ease-in-out;
+  bottom: 2px;
+  /* there must be 'bottom' for ps__scrollbar-x */
+  height: 6px; }
+
+.ps > .ps__scrollbar-x-rail:hover > .ps__scrollbar-x, .ps > .ps__scrollbar-x-rail:active > .ps__scrollbar-x {
+  height: 11px; }
+
+.ps > .ps__scrollbar-y-rail {
+  display: none;
+  position: absolute;
+  /* please don't change 'position' */
+  opacity: 0;
+  -webkit-transition: background-color .2s linear, opacity .2s linear;
+  -o-transition: background-color .2s linear, opacity .2s linear;
+  -moz-transition: background-color .2s linear, opacity .2s linear;
+  transition: background-color .2s linear, opacity .2s linear;
+  right: 0;
+  /* there must be 'right' for ps__scrollbar-y-rail */
+  width: 15px; }
+
+.ps > .ps__scrollbar-y-rail > .ps__scrollbar-y {
+  position: absolute;
+  /* please don't change 'position' */
+  background-color: #aaa;
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  border-radius: 6px;
+  -webkit-transition: background-color .2s linear, height .2s linear, width .2s ease-in-out, -webkit-border-radius .2s ease-in-out;
+  transition: background-color .2s linear, height .2s linear, width .2s ease-in-out, -webkit-border-radius .2s ease-in-out;
+  -o-transition: background-color .2s linear, height .2s linear, width .2s ease-in-out, border-radius .2s ease-in-out;
+  -moz-transition: background-color .2s linear, height .2s linear, width .2s ease-in-out, border-radius .2s ease-in-out, -moz-border-radius .2s ease-in-out;
+  transition: background-color .2s linear, height .2s linear, width .2s ease-in-out, border-radius .2s ease-in-out;
+  transition: background-color .2s linear, height .2s linear, width .2s ease-in-out, border-radius .2s ease-in-out, -webkit-border-radius .2s ease-in-out, -moz-border-radius .2s ease-in-out;
+  right: 2px;
+  /* there must be 'right' for ps__scrollbar-y */
+  width: 6px; }
+
+.ps > .ps__scrollbar-y-rail:hover > .ps__scrollbar-y, .ps > .ps__scrollbar-y-rail:active > .ps__scrollbar-y {
+  width: 11px; }
+
+.ps:hover.ps--in-scrolling.ps--x > .ps__scrollbar-x-rail {
+  background-color: #eee;
+  opacity: 0.9; }
+
+.ps:hover.ps--in-scrolling.ps--x > .ps__scrollbar-x-rail > .ps__scrollbar-x {
+  background-color: #999;
+  height: 11px; }
+
+.ps:hover.ps--in-scrolling.ps--y > .ps__scrollbar-y-rail {
+  background-color: #eee;
+  opacity: 0.9; }
+
+.ps:hover.ps--in-scrolling.ps--y > .ps__scrollbar-y-rail > .ps__scrollbar-y {
+  background-color: #999;
+  width: 11px; }
+
+.ps:hover > .ps__scrollbar-x-rail,
+.ps:hover > .ps__scrollbar-y-rail {
+  opacity: 0.6; }
+
+.ps:hover > .ps__scrollbar-x-rail:hover {
+  background-color: #eee;
+  opacity: 0.9; }
+
+.ps:hover > .ps__scrollbar-x-rail:hover > .ps__scrollbar-x {
+  background-color: #999; }
+
+.ps:hover > .ps__scrollbar-y-rail:hover {
+  background-color: #eee;
+  opacity: 0.9; }
+
+.ps:hover > .ps__scrollbar-y-rail:hover > .ps__scrollbar-y {
+  background-color: #999; }
+
+/*# sourceMappingURL=app.css.map */
