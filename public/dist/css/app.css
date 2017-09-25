@@ -339,7 +339,10 @@ body {
   background-image: url(../img/bgs/bg-page.jpg);
   background-position: center center;
   background-size: cover;
+  opacity: 0;
   transition: opacity 0.8s linear; }
+  body.active {
+    opacity: 1; }
   body::after {
     content: '';
     display: block;
